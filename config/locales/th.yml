@@ -1,0 +1,26 @@
+th:
+  org_name: "บริษัท นอร์ทอีสเทิร์น ซัพพลายส์ จำกัด"
+  title:
+    home: หน้าแรก
+    product: ผลิตภัณฑ์
+    contact: ติดต่อเรา
+    our_product: ผลิตภัณฑ์ของเรา
+  button:
+    more: เพิ่มเติม
+
+  home:
+    product:
+      cleaning_machine: เครื่องทำความสะอาด
+      floor_scrub: เครื่องขัดพื้นและปั่นเงา
+      vaccum_cleaning: เครื่องดูดฝุ่น
+      cleaning_liquid: ผลิตภัณฑ์ทำความสะอาด
+      toilet: ผลิตภัณฑ์ทำความสะอาดห้องน้ำ สุขภัณฑ์
+      wax_floor: ผลิตภัณฑ์น้ำยาเคลือบเงาพื้น
+      cleaning_spare: อะไหล่เครื่องจักรทำความสะอาด
+      cleaning_carpet: ผลิตภัณฑ์ซักพรม
+      cleaning_floor: ผลิตภัณฑ์น้ำยาทำความสะอาด - ถูพื้น - อเนกประสงค์
+      cleaning_glass: ผลิตภัณฑ์เช็ดกระจก
+      hand_wash: ผลิตภัณฑ์สบู่เหลวล้างมือ
+      cleaning_furniture: ผลิตภัณฑ์น้ำยาทำความสะอาดพื้นดันฝุ่น - เช็ดเฟอร์นิเจอร์
+      cleaning_mable: ผลิตภัณฑ์ชักเงาหิน
+      cleaning_equipment: อุปกรณ์ทำความสะอาด

@@ -30,4 +30,28 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  org_name: "Northeastern Supplies.Co.Ltd"
+  title:
+    home: Home
+    product: Products
+    contact: Contact us
+    our_product: Our Products
+  button:
+    more: More
+
+  home:
+    product:
+      cleaning_machine: Creaning Machine
+      floor_scrub: Floor scrubbing & Brunishing
+      vaccum_cleaning: Dry Vacuum Cleaners
+      cleaning_liquid: Cleaning Liquid
+      toilet: Toilet & Sanitary Cleaning Liquid
+      wax_floor: Wax Floor Care
+      cleaning_spare: Cleaning Machine Spare Part
+      cleaning_carpet: Carpet Cleaning Liquid
+      cleaning_floor: Floor Cleaning & Generaal Purpose Liquid
+      cleaning_glass: Glass Cleaning Liquid
+      hand_wash: Hand Wash Liquid
+      cleaning_furniture: Dust Map & Furniture Cleaning Liquid
+      cleaning_mable: Marble Granite Crystalization
+      cleaning_equipment: Cleaning Equipment

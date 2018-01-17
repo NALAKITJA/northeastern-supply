@@ -1,0 +1,18 @@
+<select class="language" onchange="set_locale()">
+  <option value="th" <%= "selected" if session[:locale] == "th" %>>TH</option>
+  <option value="en" <%= "selected" if session[:locale] == "en" %>>EN</option>
+</select>
+<script>
+  function set_locale(){
+    var locale = $( ".language option:selected" ).val();
+    $.ajax({
+      method: "GET",
+      url: "/set_locale",
+      data: {
+        locale: locale
+      },
+    }).done(function (html) {
+      location.reload();
+    });
+  }
+</script>
