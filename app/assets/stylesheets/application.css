@@ -91,13 +91,6 @@
           margin-top: 0;
       }
   }
-  footer {
-    color: #000000;
-    background-color: #e1e1e1;
-    height:50px;
-    text-align: center;
-    padding: 10px;
-  }
 
   .contact {
     margin-left: 5%;
@@ -120,4 +113,13 @@
   .link:hover {
     color: #868e96;
     text-decoration: none;
+  }
+
+  .box{
+    padding-top: 1%;
+  }
+
+  .box:hover{
+    background-color: #eeee;
+    padding-top: 1%;
   }

@@ -38,6 +38,7 @@ en:
     our_product: Our Products
   button:
     more: More
+    contact: Contact
 
   home:
     product:
@@ -45,13 +46,20 @@ en:
       floor_scrub: Floor scrubbing & Brunishing
       vaccum_cleaning: Dry Vacuum Cleaners
       cleaning_liquid: Cleaning Liquid
-      toilet: Toilet & Sanitary Cleaning Liquid
-      wax_floor: Wax Floor Care
+      toilet: "<strong>N-Rust</strong> <br> Toilet Cleaning Liquid"
+      wax_floor: "<strong>Buff & Shine</strong> <br>Wax Floor Care"
       cleaning_spare: Cleaning Machine Spare Part
-      cleaning_carpet: Carpet Cleaning Liquid
-      cleaning_floor: Floor Cleaning & Generaal Purpose Liquid
+      cleaning_carpet: "<strong>Foamer</strong><br>Carpet Cleaning Liquid"
+      cleaning_floor: "<strong>Shock Wave</strong><br>Floor Cleaning Purpose Liquid"
       cleaning_glass: Glass Cleaning Liquid
       hand_wash: Hand Wash Liquid
       cleaning_furniture: Dust Map & Furniture Cleaning Liquid
       cleaning_mable: Marble Granite Crystalization
       cleaning_equipment: Cleaning Equipment
+    clean:
+      n_rust: Liquid toilet bowl cleaner can be use to remove rust, lime and uric acid deposites on vitreous toilet bowl and urinal. Avoid using with marble and cemented surface. Do not use in marble.
+      buff_shine: Liquid spray buff finishes, is formulated to renew the appearance of floor finishes. It reccommended for all type of floor finishes, Easy to use together with a floor machine.
+      foamer: Carpet champoo is formulated with optical brighteners to enhance light reflection
+      shock_wave: Liquid general cleaner, is designed for cleaning glass, toilets, urinals, washroom, floors, walls and hand surfaces without metal corrosion. It has a pleasant odor and safe for use, suitable for, hotel hospital and factory.
+      win_clean:
+      lucky_blue:
