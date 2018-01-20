@@ -1,0 +1,139 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+  .home{
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .home img {vertical-align: middle;}
+
+  .home .content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .hero-image {
+    /* background-image: url("photographer.jpg"); */
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: #000000;
+  }
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .hero-text a {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #f8f9fa;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10%;
+    font-size: 30px;
+  }
+
+  .hero-text a:hover {
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+      .column, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+      }
+  }
+
+  .contact {
+    margin-left: 5%;
+    margin-top: 2%;
+    color: #000000;
+    display: block;
+    text-decoration: none;
+  }
+
+  .language{
+    border: none;
+    background-color: #f8f9fa;
+    margin-top: 20%;
+  }
+
+  .link {
+    color: #000000;
+  }
+
+  .link:hover {
+    color: #868e96;
+    text-decoration: none;
+  }
+
+  .box{
+    padding-top: 1%;
+  }
+
+  .box:hover{
+    background-color: #eeee;
+    padding-top: 1%;
+  }
+
+  a.box_product {
+    padding-top: 1%;
+    padding-bottom: 3%;
+    color: #000000 !important;
+  }
+
+  a.box_product:hover {
+    background-color: #9E9E9E;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    color: #FFFFFF !important;
+    text-decoration: none;
+  }

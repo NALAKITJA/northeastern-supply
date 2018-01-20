@@ -1,0 +1,102 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  org_name: "Northeastern Supplies.Co.Ltd"
+  title:
+    home: Home
+    product: Products
+    contact: Contact us
+    our_product: Our Products
+    details: Details
+  button:
+    more: More
+    contact: Contact
+
+  home:
+    product:
+      cleaning_machine: Creaning Machine
+      floor_scrub: "<strong>Champion Scrubbing Machine 175 RPM.</strong>"
+      vaccum_cleaning: "<strong>12 and 15-inch Single-Motor Upright Vacuums</strong>"
+      cleaning_liquid: Cleaning Liquid
+      toilet: "<strong>N-Rust</strong> <br> Toilet Cleaning Liquid"
+      wax_floor: "<strong>Buff & Shine</strong> <br>Wax Floor Care"
+      cleaning_spare: Cleaning Machine Spare Part
+      cleaning_carpet: "<strong>Foamer</strong><br>Carpet Cleaning Liquid"
+      cleaning_floor: "<strong>Shock Wave</strong><br>Floor Cleaning Purpose Liquid"
+      cleaning_glass: "<strong>Win Clean</strong><br>Glass Cleaning Liquid"
+      hand_wash: "<strong>Lucky Blue</strong><br>Hand Wash Liquid"
+      cleaning_furniture: "<strong>Pick up</strong><br>Dust Map & Furniture Cleaning Liquid"
+      cleaning_mable: Marble Granite Crystalization
+      cleaning_equipment: Cleaning Equipment
+      ozone: "<strong>UVO5000 Ozone Generator</strong>"
+      carpet_blower: "<strong>Aero Plus Carpet Air Dryer </strong>"
+      scrubb: "<strong>Scrubbing Equipment</strong>"
+      window_cleaning: "<strong>Window Cleaning Tool</strong>"
+      general_equipment: "<strong>General Cleaning Equipment</strong>"
+      maid_carts: "<strong>Maid Carts</strong>"
+      stainless: "<strong>Stainless Trolleys</strong>"
+      other: "<strong>Other Equipment</strong>"
+    clean:
+      n_rust: Liquid toilet bowl cleaner can be use to remove rust, lime and uric acid deposites on vitreous toilet bowl and urinal. Avoid using with marble and cemented surface. Do not use in marble.
+      buff_shine: Liquid spray buff finishes, is formulated to renew the appearance of floor finishes. It reccommended for all type of floor finishes, Easy to use together with a floor machine.
+      foamer: Carpet champoo is formulated with optical brighteners to enhance light reflection.
+      shock_wave: Liquid general cleaner, is designed for cleaning glass, toilets, urinals, washroom, floors, walls and hand surfaces without metal corrosion. It has a pleasant odor and safe for use, suitable for, hotel hospital and factory.
+      win_clean: Window clean and glass cleaner is uesd for glass window doors, mirrors, display cases, counter tops, window shield, and all other glass surfaces.
+      lucky_blue: Liquid hand soap.
+      pick_up: Liquid dust mop treatment is designed to treat dust mops and cloths to give them more dust collecting and holding abitities. Contains solvents and oil. Use for wood and stone.
+    machine:
+      vacuum: The Pacer 12/15 UE upright was designed to deliver value to your facility maintenance program on every conceivable level.
+      floor: '<b>Brush Size:16", 18", 20" <br>Motor:1 Hp. <br>Weight:40,42,45 kg. <br>
+                <u>Floor Scrubber Machine Features</u></b> <br>
+                - Extra thick, polymer coated handle – firm and reduce static electricity. <br>
+                - Adjustable starlock fully folding style handle for user friendly controls. <br>
+                - 4″ unmarking wheels are dustless and noiseless while moving. <br>
+                - Non-marking, wrap-around bumper protects wall and furniture.<br>
+                - Ultra quiet gear wheel system standing for heavy duty tasks.<br>
+                - Strength, durable and rustless aluminium alloy casting body.'
+      ozone: '<b>Area size: 50-150  sq.m. <br>
+                Ozone Volume: 2,500 Mg./hr. (2.50ppm) <br>
+                Timer Seting: 5 sec. - 300 hr.<br>
+                Dimension: 190x610xh210  mm. <br>
+                Weight: 6.8 kg.</b>'
+      carpet_blower: The three-speed Aero Plus Carpet Dryer from NSS® Enterprises accelerates carpet drying time by as much as 50 percent. While carpet extractors remove most of the moisture they put down during cleaning, carpets may still be too damp for immediate traffic. That’s where the Aero Plus can help.
+      wet_vacuum: '- Four tank sizes: 30, 60 and 100 Ltr. for any size job. <br>
+                  - A powerful 1.34 HP motor provides an incredible 106 CFM of air flow. <br>
+                  - Durable and corrosion resistant polyethylene tanks. <br>
+                  - Front casters and rear wheels make the Alpha 30, 60 and 100 models both stable and maneuverable. <br>'
+    equipment:
+      scrubb: '- แปรงไนล่อนแข็งขัดพื้น 16",18", 20"<br>- แปรงไนล่อนอ่อนซักพื้น 16",18", 20"'
+      window_cleaning: '- Pro Squeegee Channel w Rubber<br>- Strip T Bar Washer Holder Plastic<br>- Rubber for Replacement<br> - Telescopic pole'
+      general_equipment: '- Dust Mop Handle<br>- Mop Cloth<br>- Floor Squeegee<br>'
+      maid_carts: '- Guest room Service Cart<br> - Clening Cart<br> - Rectangle landry cart<br> - Brute container with lid and Dolly'
+      stainless: '- Stainless Linen Trolley<br> - Stainless Luggage Trolley<br> - Stainless Uniform Rack<br>- Stainless Guest Landry Trolley<br>- Stainless Trolley : Birdcage'
+      other: '- Scotch Brite green - white<br>- Scotch Brite roll green - white '

@@ -1,0 +1,224 @@
+<title><%= t('title.product')%></title>
+<div class="w3-container" style="text-align: center;">
+  <h4 style="margin: auto;text-align: center; margin-top: 5%;"><%= t('home.product.cleaning_equipment')%></h4>
+  <div class="row" style="margin: auto; padding: 3% 10%;">
+    <div class="col-sm-4 box" data-toggle="modal" data-target="#scrubb" style="padding-top: 5%;">
+      <img src="http://www.peerapat.com/images/data/images/mc-floor-equip.jpg" class="img-thumbnail" style="width:70%;">
+      <p style="text-align: center; font-size: 20px;padding-top: 10%;"><%= raw t('home.product.scrubb')%></p>
+    </div>
+    <div class="col-sm-4 box" data-toggle="modal" data-target="#window_cleaning" style="padding-top: 5%;">
+      <img src="http://www.peerapat.com/images/data/images/glass-cleaning.jpg" class="img-thumbnail" style="width:70%;">
+      <p style="text-align: center; font-size: 20px;padding-top: 10%;"><%= raw t('home.product.window_cleaning')%></p>
+    </div>
+    <div class="col-sm-4 box" data-toggle="modal" data-target="#general_equipment" style="padding-top: 5%;">
+      <img src="http://www.peerapat.com/images/data/images/General%20cleainig.jpg" class="img-thumbnail" style="width:70%;">
+      <p style="text-align: center; font-size: 20px;padding-top: 10%;"><%= raw t('home.product.general_equipment')%></p>
+    </div>
+  </div>
+  <div class="row" style="margin: auto;  padding: 0% 10% 5%;">
+    <div class="col-sm-4 box" data-toggle="modal" data-target="#maid_carts" style="padding-top: 5%;">
+      <img src="http://www.peerapat.com/images/data/images/csp-PLAS.jpg" class="img-thumbnail" style="width:70%;">
+      <p style="text-align: center; font-size: 20px;padding-top: 10%;"><%= raw t('home.product.maid_carts')%></p>
+    </div>
+    <div class="col-sm-4 box" data-toggle="modal" data-target="#stainless" style="padding-top: 5%;">
+      <img src="http://www.peerapat.com/images/data/images/CSP-Stainless.jpg" class="img-thumbnail" style="width:70%;">
+      <p style="text-align: center; font-size: 20px;padding-top: 10%;"><%= raw t('home.product.stainless')%></p>
+    </div>
+    <div class="col-sm-4 box" data-toggle="modal" data-target="#other" style="padding-top: 5%;">
+      <img src="https://multimedia.3m.com/mws/media/1238864P/s-b-3-5x6-w-o-200pd-ctn.jpg" class="img-thumbnail" style="width:55%;">
+      <p style="text-align: center; font-size: 20px;padding-top: 10%;"><%= raw t('home.product.other')%></p>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="scrubb">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <h4 class="modal-title"><%= raw t('home.product.scrubb')%></h4><br>
+        <img src="http://www.peerapat.com/images/data/images/mc-floor-equip.jpg" class="img-thumbnail" style="width:70%;"><br>
+        <div class="container" style="margin-top: 2%; height: 300px;">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#details1"><%= t('title.details')%></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#contact1"><%= t('button.contact')%></a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="details1" class="container tab-pane active"><br>
+              <p style="text-align: left;"><%= raw t('home.equipment.scrubb')%></p>
+            </div>
+            <div id="contact1" class="container tab-pane fade" style="margin-left: 10%;"><br>
+              <%= render 'shared/contact'%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="window_cleaning">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <h4 class="modal-title"><%= raw t('home.product.window_cleaning')%></h4><br>
+        <img src="http://www.peerapat.com/images/data/images/glass-cleaning.jpg" class="img-thumbnail" style="width:70%;"><br>
+        <div class="container" style="text-align: left; margin-top: 2%; height: 270px;">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#details"><%= t('title.details')%></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#contact"><%= t('button.contact')%></a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="details" class="container tab-pane active"><br>
+              <p><%= raw t('home.equipment.window_cleaning')%></p>
+            </div>
+            <div id="contact" class="container tab-pane fade" style="margin-left: 10%;"><br>
+              <%= render 'shared/contact'%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="general_equipment">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <h4 class="modal-title"><%= raw t('home.product.general_equipment')%></h4><br>
+        <img src="http://www.peerapat.com/images/data/images/General%20cleainig.jpg" class="img-thumbnail" class="img-thumbnail" style="width:70%;"><br>
+        <div class="container" style="text-align: left; margin-top: 2%; height: 270px;">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#details2"><%= t('title.details')%></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#contact2"><%= t('button.contact')%></a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="details2" class="container tab-pane active"><br>
+              <p><%= raw t('home.equipment.general_equipment')%></p>
+            </div>
+            <div id="contact2" class="container tab-pane fade" style="margin-left: 10%;"><br>
+              <%= render 'shared/contact'%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="maid_carts">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <h4 class="modal-title"><%= raw t('home.product.maid_carts')%></h4><br>
+        <img src="http://www.peerapat.com/images/data/images/csp-PLAS.jpg" class="img-thumbnail" style="width:70%;"><br>
+        <div class="container" style="text-align: left; margin-top: 2%; height: 270px;">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#details3"><%= t('title.details')%></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#contact3"><%= t('button.contact')%></a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="details3" class="container tab-pane active"><br>
+              <p><%= raw t('home.equipment.maid_carts')%></p>
+            </div>
+            <div id="contact3" class="container tab-pane fade" style="margin-left: 10%;"><br>
+              <%= render 'shared/contact'%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="stainless">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <h4 class="modal-title"><%= raw t('home.product.stainless')%></h4><br>
+        <img src="http://www.peerapat.com/images/data/images/CSP-Stainless.jpg" class="img-thumbnail" style="width:70%;"><br>
+        <div class="container" style="text-align: left; margin-top: 2%; height: 270px;">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#details4"><%= t('title.details')%></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#contact4"><%= t('button.contact')%></a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="details4" class="container tab-pane active"><br>
+              <p><%= raw t('home.equipment.stainless')%></p>
+            </div>
+            <div id="contact4" class="container tab-pane fade" style="margin-left: 10%;"><br>
+              <%= render 'shared/contact'%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="other">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <h4 class="modal-title"><%= raw t('home.product.other')%></h4><br>
+        <img src="https://multimedia.3m.com/mws/media/1238864P/s-b-3-5x6-w-o-200pd-ctn.jpg" class="img-thumbnail" style="width:70%;"><br>
+        <div class="container" style="text-align: left; margin-top: 2%; height: 270px;">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#details5"><%= t('title.details')%></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#contact5"><%= t('button.contact')%></a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="details5" class="container tab-pane active"><br>
+              <p><%= raw t('home.equipment.other')%></p>
+            </div>
+            <div id="contact5" class="container tab-pane fade" style="margin-left: 10%;"><br>
+              <%= render 'shared/contact'%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

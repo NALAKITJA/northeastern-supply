@@ -1,0 +1,260 @@
+<title><%= t('title.product')%></title>
+<div class="w3-container" style="text-align: center;">
+  <h4 style="margin: auto;text-align: center; margin-top: 5%;"><%= raw t('home.product.cleaning_liquid')%></h4>
+  <div class="row" style="margin: auto; padding: 3% 10%;">
+    <div class="col-sm-3 box" data-toggle="modal" data-target="#toilet">
+      <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_495853010_fullsize.jpg" class="img-thumbnail" style="width:70%;">
+      <p style="text-align: center; font-size: 16px;padding-top: 10%;"><%= raw t('home.product.toilet')%></p>
+    </div>
+    <div class="col-sm-3 box" data-toggle="modal" data-target="#wax_floor">
+      <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_465402125_fullsize.jpg" class="img-thumbnail" style="width:70%;">
+      <p style="text-align: center; font-size: 16px;padding-top: 10%;"><%= raw t('home.product.wax_floor')%></p>
+    </div>
+    <div class="col-sm-3 box" data-toggle="modal" data-target="#cleaning_floor">
+      <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_294025393_fullsize.jpg" class="img-thumbnail" style="width:70%;">
+      <p style="text-align: center; font-size: 16px;padding-top: 10%;"><%= raw t('home.product.cleaning_floor')%></p>
+    </div>
+    <div class="col-sm-3 box" data-toggle="modal" data-target="#cleaning_glass">
+      <img src="http://img.tarad.com/shop/p/peerapat/img-lib/spd_20161223170542_b.jpg" class="img-thumbnail" style="width:70%;">
+      <p style="text-align: center; font-size: 16px;padding-top: 10%;"><%= raw t('home.product.cleaning_glass')%></p>
+    </div>
+  </div>
+  <div class="row" style="margin: auto; padding: 0% 10% 5%;">
+    <div class="col-sm-3 box" data-toggle="modal" data-target="#cleaning_furniture">
+      <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_935760826_fullsize.jpg" class="img-thumbnail" style="width:70%;">
+      <p style="text-align: center; font-size: 16px;padding-top: 10%;"><%= raw t('home.product.cleaning_furniture')%></p>
+    </div>
+    <div class="col-sm-3 box" data-toggle="modal" data-target="#hand_wash">
+      <img src="http://img.tarad.com/shop/p/peerapat/img-lib/spd_20161223170917_b.jpg" class="img-thumbnail" style="width:70%;">
+      <p style="text-align: center; font-size: 16px;padding-top: 10%;"><%= raw t('home.product.hand_wash')%></p>
+    </div>
+    <div class="col-sm-3 box" data-toggle="modal" data-target="#carpet">
+      <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_816761490_fullsize.jpg" class="img-thumbnail" style="width:70%;">
+      <p style="text-align: center; font-size: 16px;padding-top: 10%;"><%= raw t('home.product.cleaning_carpet')%></p>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="toilet">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <h4 class="modal-title"><%= raw t('home.product.toilet')%></h4><br>
+        <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_495853010_fullsize.jpg" class="img-thumbnail" style="width:70%;"><br>
+        <div class="container" style="text-align: center; margin-top: 2%; height: 270px;">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#details"><%= t('title.details')%></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#contact"><%= t('button.contact')%></a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="details" class="container tab-pane active"><br>
+              <p><%= t('home.clean.n_rust')%></p>
+            </div>
+            <div id="contact" class="container tab-pane fade" style="margin-left: 10%;"><br>
+              <%= render 'shared/contact'%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="wax_floor">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <h4 class="modal-title"><%= raw t('home.product.wax_floor')%></h4><br>
+        <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_465402125_fullsize.jpg" class="img-thumbnail" style="width:70%;"><br>
+        <div class="container" style="text-align: center; margin-top: 2%; height: 270px;">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#details6"><%= t('title.details')%></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#contact6"><%= t('button.contact')%></a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="details6" class="container tab-pane active"><br>
+              <p><%= t('home.clean.buff_shine')%></p>
+            </div>
+            <div id="contact6" class="container tab-pane fade" style="margin-left: 10%;"><br>
+              <%= render 'shared/contact'%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="carpet">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <h4 class="modal-title"><%= raw t('home.product.cleaning_carpet')%></h4><br>
+        <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_816761490_fullsize.jpg" class="img-thumbnail" style="width:70%;"><br>
+        <div class="container" style="text-align: center; margin-top: 2%; height: 270px;">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#details2"><%= t('title.details')%></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#contact2"><%= t('button.contact')%></a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="details2" class="container tab-pane active"><br>
+              <p><%= t('home.clean.foamer')%></p>
+            </div>
+            <div id="contact2" class="container tab-pane fade" style="margin-left: 10%;"><br>
+              <%= render 'shared/contact'%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="cleaning_floor">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <h4 class="modal-title"><%= raw t('home.product.cleaning_floor')%></h4><br>
+        <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_294025393_fullsize.jpg" class="img-thumbnail" style="width:70%;"><br>
+        <div class="container" style="text-align: center; margin-top: 2%; height: 270px;">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#details3"><%= t('title.details')%></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#contact3"><%= t('button.contact')%></a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="details3" class="container tab-pane active"><br>
+              <p><%= t('home.clean.shock_wave')%></p>
+            </div>
+            <div id="contact3" class="container tab-pane fade" style="margin-left: 10%;"><br>
+              <%= render 'shared/contact'%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="cleaning_glass">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <h4 class="modal-title"><%= raw t('home.product.cleaning_floor')%></h4><br>
+        <img src="http://img.tarad.com/shop/p/peerapat/img-lib/spd_20161223170542_b.jpg" class="img-thumbnail" style="width:70%;"><br>
+        <div class="container" style="text-align: center; margin-top: 2%; height: 270px;">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#details8"><%= t('title.details')%></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#contact8"><%= t('button.contact')%></a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="details8" class="container tab-pane active"><br>
+              <p><%= t('home.clean.win_clean')%></p>
+            </div>
+            <div id="contact8" class="container tab-pane fade" style="margin-left: 10%;"><br>
+              <%= render 'shared/contact'%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="cleaning_furniture">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <h4 class="modal-title"><%= raw t('home.product.cleaning_furniture')%></h4><br>
+        <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_935760826_fullsize.jpg" class="img-thumbnail" style="width:70%;"><br>
+        <div class="container" style="text-align: center; margin-top: 2%; height: 270px;">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#details1"><%= t('title.details')%></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#contact1"><%= t('button.contact')%></a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="details1" class="container tab-pane active"><br>
+              <p><%= t('home.clean.pick_up')%></p>
+            </div>
+            <div id="contact1" class="container tab-pane fade" style="margin-left: 10%;"><br>
+              <%= render 'shared/contact'%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="hand_wash">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <h4 class="modal-title"><%= raw t('home.product.hand_wash')%></h4><br>
+        <img src="http://img.tarad.com/shop/p/peerapat/img-lib/spd_20161223170917_b.jpg" class="img-thumbnail" style="width:70%;"><br>
+        <div class="container" style="text-align: center; margin-top: 2%; height: 270px;">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#details7"><%= t('title.details')%></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#contact7"><%= t('button.contact')%></a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="details7" class="container tab-pane active"><br>
+              <p><%= t('home.clean.lucky_blue')%></p>
+            </div>
+            <div id="contact7" class="container tab-pane fade" style="margin-left: 10%;"><br>
+              <%= render 'shared/contact'%>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
