@@ -123,3 +123,17 @@
     background-color: #eeee;
     padding-top: 1%;
   }
+
+  a.box_product {
+    padding-top: 1%;
+    padding-bottom: 3%;
+    color: #000000 !important;
+  }
+
+  a.box_product:hover {
+    background-color: #9E9E9E;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    color: #FFFFFF !important;
+    text-decoration: none;
+  }

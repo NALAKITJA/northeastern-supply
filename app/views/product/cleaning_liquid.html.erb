@@ -1,7 +1,7 @@
 <title><%= t('title.product')%></title>
 <div class="w3-container" style="text-align: center;">
   <h4 style="margin: auto;text-align: center; margin-top: 5%;"><%= raw t('home.product.cleaning_liquid')%></h4>
-  <div class="row" style="margin: auto; padding: 5% 10%;">
+  <div class="row" style="margin: auto; padding: 3% 10%;">
     <div class="col-sm-3 box" data-toggle="modal" data-target="#toilet">
       <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_495853010_fullsize.jpg" class="img-thumbnail" style="width:70%;">
       <p style="text-align: center; font-size: 16px;padding-top: 10%;"><%= raw t('home.product.toilet')%></p>
@@ -19,7 +19,7 @@
       <p style="text-align: center; font-size: 16px;padding-top: 10%;"><%= raw t('home.product.cleaning_glass')%></p>
     </div>
   </div>
-  <div class="row" style="margin: auto; padding: 0% 10% 7%;">
+  <div class="row" style="margin: auto; padding: 0% 10% 5%;">
     <div class="col-sm-3 box" data-toggle="modal" data-target="#cleaning_furniture">
       <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_935760826_fullsize.jpg" class="img-thumbnail" style="width:70%;">
       <p style="text-align: center; font-size: 16px;padding-top: 10%;"><%= raw t('home.product.cleaning_furniture')%></p>
@@ -75,13 +75,23 @@
       <div class="modal-body" style="text-align: center;">
         <h4 class="modal-title"><%= raw t('home.product.wax_floor')%></h4><br>
         <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_465402125_fullsize.jpg" class="img-thumbnail" style="width:70%;"><br>
-        <p style="margin-top: 5%;"><%= t('home.clean.buff_shine')%></p>
-      </div>
-      <div class="modal-footer">
-        <div class="container" style="text-align: center;"><br>
-          <button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#contact"><%= t('button.contact')%></button><br>
-          <div id="contact" class="collapse" style="margin-left: 15%;">
-            <%= render 'shared/contact'%>
+        <div class="container" style="text-align: center; margin-top: 2%; height: 270px;">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#details6"><%= t('title.details')%></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#contact6"><%= t('button.contact')%></a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="details6" class="container tab-pane active"><br>
+              <p><%= t('home.clean.buff_shine')%></p>
+            </div>
+            <div id="contact6" class="container tab-pane fade" style="margin-left: 10%;"><br>
+              <%= render 'shared/contact'%>
+            </div>
           </div>
         </div>
       </div>
@@ -100,18 +110,18 @@
         <div class="container" style="text-align: center; margin-top: 2%; height: 270px;">
           <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#details1"><%= t('title.details')%></a>
+              <a class="nav-link active" data-toggle="tab" href="#details2"><%= t('title.details')%></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#contact1"><%= t('button.contact')%></a>
+              <a class="nav-link" data-toggle="tab" href="#contact2"><%= t('button.contact')%></a>
             </li>
           </ul>
           <!-- Tab panes -->
           <div class="tab-content">
-            <div id="details1" class="container tab-pane active"><br>
+            <div id="details2" class="container tab-pane active"><br>
               <p><%= t('home.clean.foamer')%></p>
             </div>
-            <div id="contact1" class="container tab-pane fade" style="margin-left: 10%;"><br>
+            <div id="contact2" class="container tab-pane fade" style="margin-left: 10%;"><br>
               <%= render 'shared/contact'%>
             </div>
           </div>
@@ -132,18 +142,18 @@
         <div class="container" style="text-align: center; margin-top: 2%; height: 270px;">
           <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#details1"><%= t('title.details')%></a>
+              <a class="nav-link active" data-toggle="tab" href="#details3"><%= t('title.details')%></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#contact1"><%= t('button.contact')%></a>
+              <a class="nav-link" data-toggle="tab" href="#contact3"><%= t('button.contact')%></a>
             </li>
           </ul>
           <!-- Tab panes -->
           <div class="tab-content">
-            <div id="details1" class="container tab-pane active"><br>
+            <div id="details3" class="container tab-pane active"><br>
               <p><%= t('home.clean.shock_wave')%></p>
             </div>
-            <div id="contact1" class="container tab-pane fade" style="margin-left: 10%;"><br>
+            <div id="contact3" class="container tab-pane fade" style="margin-left: 10%;"><br>
               <%= render 'shared/contact'%>
             </div>
           </div>
@@ -164,18 +174,18 @@
         <div class="container" style="text-align: center; margin-top: 2%; height: 270px;">
           <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#details1"><%= t('title.details')%></a>
+              <a class="nav-link active" data-toggle="tab" href="#details8"><%= t('title.details')%></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#contact1"><%= t('button.contact')%></a>
+              <a class="nav-link" data-toggle="tab" href="#contact8"><%= t('button.contact')%></a>
             </li>
           </ul>
           <!-- Tab panes -->
           <div class="tab-content">
-            <div id="details1" class="container tab-pane active"><br>
-              <p><%= t('home.clean.shock_wave')%></p>
+            <div id="details8" class="container tab-pane active"><br>
+              <p><%= t('home.clean.win_clean')%></p>
             </div>
-            <div id="contact1" class="container tab-pane fade" style="margin-left: 10%;"><br>
+            <div id="contact8" class="container tab-pane fade" style="margin-left: 10%;"><br>
               <%= render 'shared/contact'%>
             </div>
           </div>
@@ -228,18 +238,18 @@
         <div class="container" style="text-align: center; margin-top: 2%; height: 270px;">
           <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#details1"><%= t('title.details')%></a>
+              <a class="nav-link active" data-toggle="tab" href="#details7"><%= t('title.details')%></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#contact1"><%= t('button.contact')%></a>
+              <a class="nav-link" data-toggle="tab" href="#contact7"><%= t('button.contact')%></a>
             </li>
           </ul>
           <!-- Tab panes -->
           <div class="tab-content">
-            <div id="details1" class="container tab-pane active"><br>
-              <p><%= t('home.clean.pick_up')%></p>
+            <div id="details7" class="container tab-pane active"><br>
+              <p><%= t('home.clean.lucky_blue')%></p>
             </div>
-            <div id="contact1" class="container tab-pane fade" style="margin-left: 10%;"><br>
+            <div id="contact7" class="container tab-pane fade" style="margin-left: 10%;"><br>
               <%= render 'shared/contact'%>
             </div>
           </div>
