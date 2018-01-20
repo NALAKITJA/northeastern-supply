@@ -36,6 +36,7 @@ en:
     product: Products
     contact: Contact us
     our_product: Our Products
+    details: Details
   button:
     more: More
     contact: Contact
@@ -61,6 +62,7 @@ en:
       buff_shine: Liquid spray buff finishes, is formulated to renew the appearance of floor finishes. It reccommended for all type of floor finishes, Easy to use together with a floor machine.
       foamer: Carpet champoo is formulated with optical brighteners to enhance light reflection.
       shock_wave: Liquid general cleaner, is designed for cleaning glass, toilets, urinals, washroom, floors, walls and hand surfaces without metal corrosion. It has a pleasant odor and safe for use, suitable for, hotel hospital and factory.
-      win_clean: Window clean and glass cleaner is uesed for glass windows doors, mirrors, display cases counter tops, window shields, and all other glass surfaces.
-      lucky_blue: Lucky blue is liquid hand soap.
-      pick_up: Liquid dust map treatment is designed to treat dust maps and cloths to give them more dust collection and holding abilities. Contains solvents and oil. Use for wood and stone.
+      win_clean:
+      lucky_blue:
+    machine:
+      vacuum: The Pacer 12/15 UE upright was designed to deliver value to your facility maintenance program on every conceivable level.
