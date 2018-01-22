@@ -1,14 +1,10 @@
 class HomeController < ApplicationController
-  # before_action :set_locale
+  before_action :set_locale
   def index
 
   end
 
   def product
-
-  end
-
-  def product_main
 
   end
 
