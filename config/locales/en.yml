@@ -31,10 +31,15 @@
 
 en:
   org_name: "Northeastern Supplies.Co.Ltd"
+  content: "Cleaning Machines, Cleaning Liquids and Cleaning Equipment"
+  name: Name
+  email: Email
+  description: Description
+  submit: Submit
   title:
     home: Home
     product: Products
-    contact: Contact us
+    contact: Contact
     our_product: Our Products
     details: Details
   button:
