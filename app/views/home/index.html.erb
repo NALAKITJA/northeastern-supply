@@ -1,59 +1,87 @@
 <title><%= t('title.home')%></title>
-<div class="container">
-  <div class="home" id="home">
-    <!-- <img src="" style="width:100%; height:500px;"> -->
-    <div style="width:100%; height:500px;" >
-
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="http://www.qbcsgroup.co.uk/wp-content/uploads/2016/04/commercial-cleaning1.png" style="width: 100%; height:600px;">
+      <div class="carousel-caption" style="background-color: #0000008a;">
+        <h1><%= t('org_name')%></h1>
+        <p><%= t('content')%></p>
+      </div>
     </div>
-    <div class="content">
-      <h1><%= t('org_name')%></h1>
-      <p>จำหน่ายผลิตภัณฑ์น้ำยาทำความสะอาด อุปกรณ์ทำความสะอาดและเครื่องมือเครื่องใช้ในการทำความสะอาด</p>
+    <div class="carousel-item">
+      <img src="http://cleanmyspace.com/wp-content/uploads/2017/08/how-to-hire-a-cleaning-service.jpg" style="width: 100%; height:600px;">
+      <div class="carousel-caption" style="background-color: #0000008a;">
+        <h1><%= t('org_name')%></h1>
+        <p><%= t('content')%></p>
+      </div>
     </div>
-  </div>
-  <div class="home" id="product" style="height: 500px;">
-    <div class="hero-image">
-      <div class="hero-text">
-        <h1 style="font-size:50px"><%= t('title.product')%></h1>
-        <a href="/products"><%= t('button.more')%></a>
+    <div class="carousel-item">
+      <img src="http://cdn2.expertreviews.co.uk/sites/expertreviews/files/2016/05/best_vacuum_cleaners.jpg" style="width: 100%; height:600px;">
+      <div class="carousel-caption" style="background-color: #0000008a;">
+        <h1><%= t('org_name')%></h1>
+        <p><%= t('content')%></p>
       </div>
     </div>
   </div>
-  <div class="home" id="contact" style="height: 500px;">
-    <div class="container">
-        <div style="text-align:center;margin-top: 3%;">
-          <h2><%= t('title.contact')%></h2>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<div id="products" class="container-fluid bg-3 text-center" style="margin-top: 5%;">
+  <h1 style="margin-bottom: 5%;"><%= t('title.our_product')%></h1>
+  <div class="hero-image" style=" background-color: #FFFFFF;">
+    <div class="row">
+      <a href="/cleaning/machine" class="col-sm-4 box_product">
+        <h2><%= t('.cleaning_machine')%></h2>
+        <img src="https://cdn.ready-market.com/6/a404a766//Templates/pic/Cleaning-Tools.jpg?v=c6cbac7a" class="img-thumbnail" style="width: 60%; margin-top: 10%;">
+      </a>
+      <a href="/cleaning/liquid" class="col-sm-4 box_product">
+        <h2><%= t('.cleaning_liquid')%></h2>
+        <img src="https://s.isanook.com/hm/0/ud/1/8533/a.jpg" class="img-thumbnail" style="width: 80%; margin-top: 10%;">
+      </a>
+      <a href="/cleaning/equipment" class="col-sm-4 box_product">
+        <h2><%= t('.cleaning_equipment')%></h2>
+        <img src="http://www.peerapat.com/images/data/images/glass-cleaning.jpg" class="img-thumbnail" style="width: 85%; margin-top: 10%;">
+      </a>
+    </div>
+  </div>
+</div>
+<div class="home container-fluid bg-3" id="contact" style="height: 400px; padding-top: 5%; background-color: #e1e1e1;">
+  <div class="container">
+      <div style="text-align:center;">
+        <h2><%= t('title.contact')%></h2>
+      </div>
+      <div class="row"  style="margin-top: 5%;">
+        <div class="col-sm-3 col-md-6" style="text-align: center; margin-top: auto; margin-bottom: auto;">
+          <div class="row" style=" float: right;  margin-right: 5%;">
+          <img src="https://image.flaticon.com/icons/svg/124/124010.svg" style="width: auto; height: 50px;">
         </div>
-        <div class="row">
-          <div class="column">
-          <a href="https://www.google.co.th/maps/place/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%A9%E0%B8%B1%E0%B8%97+%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%97%E0%B8%AD%E0%B8%B5%E0%B8%AA%E0%B9%80%E0%B8%97%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%99+%E0%B8%8B%E0%B8%B1%E0%B8%9E%E0%B8%9E%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%AA%E0%B9%8C+%E0%B8%88%E0%B8%B3%E0%B8%81%E0%B8%B1%E0%B8%94/@16.4031157,102.8359608,17z/data=!3m1!4b1!4m5!3m4!1s0x31228990cc99767d:0x2974037151985d7f!8m2!3d16.4031106!4d102.8381495?hl=th" target="_blank" ><%= image_tag("map.PNG", style: "width: 100%;  height: 400px;") %></a>
-          </div>
-          <div class="column" style="margin-top: 8%;">
-            <div class="list">
-              <div class="row">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/1000px-F_icon.svg.png" style="width: auto; height: 50px;">
-                <p class="contact">บริษัท-นอร์ทอีสเทิร์น-ซัพพลายส์-จำกัด</p>
-              </div>
-            </div>
-            <div class="list">
-              <div class="row">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" style="width: auto; height: 50px;">
-                <p class="contact">บริษัท-นอร์ทอีสเทิร์น-ซัพพลายส์-จำกัด</p>
-              </div>
-            </div>
-            <div class="list">
-              <div class="row">
-                <img src="http://pngimg.com/uploads/email/email_PNG49.png" style="width: auto; height: 50px;">
-                <p class="contact">email@mail.com</p>
-              </div>
-            </div>
-            <div class="list">
-              <div class="row">
-                <img src="http://sisinterstudy.com/wp-content/uploads/2014/11/purple-phone-logo1-hi.png" style="width: auto; height: 50px;">
-                <p class="contact">000000000</p>
-              </div>
-            </div>
-          </div>
+        <div class="row" style=" float: right;  margin-right: 5%;">
+          <img src="https://image.flaticon.com/icons/svg/124/124027.svg" style="width: auto; height: 50px;">
         </div>
+       </div>
+       <div class="col-sm-9 col-md-6" style="margin-top: auto; margin-bottom: auto;">
+         <div class="row" style="margin-bottom: 1%;">
+           <img src="https://image.flaticon.com/icons/svg/281/281769.svg" style="width: auto; height: 50px;">
+           <p style="margin-top: auto; margin-bottom: auto; margin-left: 2%;">kkckhonkaen@gmail.com</p>
+         </div>
+         <div class="row" style="margin-bottom: 1%;">
+           <img src="https://image.flaticon.com/icons/svg/159/159684.svg" style="width: auto; height: 50px;">
+           <p style="margin-top: auto; margin-bottom: auto; margin-left: 2%;">043-225323, 043-306250, 081-9641266</p>
+         </div>
+         <div class="row">
+           <img src="https://image.flaticon.com/icons/svg/376/376948.svg" style="width: auto; height: 50px;">
+           <p style="margin-top: auto; margin-bottom: auto; margin-left: 2%;"><%= raw t('address_detail')%></p>
+         </div>
+       </div>
       </div>
     </div>
   </div>

@@ -31,10 +31,13 @@
 
 en:
   org_name: "Northeastern Supplies.Co.Ltd"
+  content: "Cleaning Machines, Cleaning Liquids and Cleaning Equipment"
+  address: Address
+  address_detail: "11/3 Srithat Prachasanti road, <br>Naimueng sub-district, Khonkaen district, Khonkaen 40000"
   title:
     home: Home
     product: Products
-    contact: Contact us
+    contact: Contact
     our_product: Our Products
     details: Details
   button:

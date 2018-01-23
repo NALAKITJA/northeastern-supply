@@ -9,14 +9,14 @@
   </head>
 
   <body>
-    <nav class="navbar fixed-top navbar-light bg-light">
-      <a class="navbar-brand" href="/">LoGo NES</a>
+    <nav class="navbar fixed-top navbar-light" style="background-color: #FFFFFF;">
+      <a class="navbar-brand" href="/"><%= image_tag("logo.png", style: "width: 90px;height: 50px;") %></a>
       <ul class="nav justify-content-end">
         <li class="nav-item">
           <a class="nav-link active link" href="/"><%= t('title.home')%></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link link" href="/products"><%= t('title.product')%></a>
+          <a class="nav-link link" href="/#products"><%= t('title.product')%></a>
         </li>
         <li class="nav-item">
           <a class="nav-link link" href="/#contact"><%= t('title.contact')%></a>
@@ -33,7 +33,4 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </body>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
-    <span style="color: #868e96;">11/3 ถนนศรีธาตุประชาสันติ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</span>
-  </nav>
 </html>
