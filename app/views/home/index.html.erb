@@ -54,55 +54,34 @@
     </div>
   </div>
 </div>
-<div class="home container-fluid bg-3" id="contact" style="height: 600px; padding-top: 5%; background-color: #e1e1e1;">
+<div class="home container-fluid bg-3" id="contact" style="height: 400px; padding-top: 5%; background-color: #e1e1e1;">
   <div class="container">
       <div style="text-align:center;">
         <h2><%= t('title.contact')%></h2>
       </div>
-      <div class="row">
-        <div class="column">
-          <form>
-            <div class="form-group">
-              <label for="formGroupExampleInput"><%= t('name')%></label>
-              <input type="text" class="form-control" id="formGroupExampleInput">
-            </div>
-            <div class="form-group">
-              <label for="formGroupExampleInput2"><%= t('email')%></label>
-              <input type="text" class="form-control" id="formGroupExampleInput2">
-            </div>
-            <div class="form-group">
-              <label for="formGroupExampleInput2"><%= t('description')%></label>
-              <input type="text" class="form-control" id="formGroupExampleInput2">
-            </div>
-          </form>
-          <button type="submit" name="button"><%= t('submit')%></button>
+      <div class="row"  style="margin-top: 5%;">
+        <div class="col-sm-3 col-md-6" style="text-align: center; margin-top: auto; margin-bottom: auto;">
+          <div class="row" style=" float: right;  margin-right: 5%;">
+          <img src="https://image.flaticon.com/icons/svg/124/124010.svg" style="width: auto; height: 50px;">
         </div>
-        <div class="column" style="margin-top: 8%;">
-          <div class="list">
-            <div class="row">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/1000px-F_icon.svg.png" style="width: auto; height: 50px;">
-              <p class="contact">บริษัท-นอร์ทอีสเทิร์น-ซัพพลายส์-จำกัด</p>
-            </div>
-          </div>
-          <div class="list">
-            <div class="row">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" style="width: auto; height: 50px;">
-              <p class="contact">บริษัท-นอร์ทอีสเทิร์น-ซัพพลายส์-จำกัด</p>
-            </div>
-          </div>
-          <div class="list">
-            <div class="row">
-              <img src="http://pngimg.com/uploads/email/email_PNG49.png" style="width: auto; height: 50px;">
-              <p class="contact">email@mail.com</p>
-            </div>
-          </div>
-          <div class="list">
-            <div class="row">
-              <img src="http://sisinterstudy.com/wp-content/uploads/2014/11/purple-phone-logo1-hi.png" style="width: auto; height: 50px;">
-              <p class="contact">000000000</p>
-            </div>
-          </div>
+        <div class="row" style=" float: right;  margin-right: 5%;">
+          <img src="https://image.flaticon.com/icons/svg/124/124027.svg" style="width: auto; height: 50px;">
         </div>
+       </div>
+       <div class="col-sm-9 col-md-6" style="margin-top: auto; margin-bottom: auto;">
+         <div class="row" style="margin-bottom: 1%;">
+           <img src="https://image.flaticon.com/icons/svg/281/281769.svg" style="width: auto; height: 50px;">
+           <p style="margin-top: auto; margin-bottom: auto; margin-left: 2%;">kkckhonkaen@gmail.com</p>
+         </div>
+         <div class="row" style="margin-bottom: 1%;">
+           <img src="https://image.flaticon.com/icons/svg/159/159684.svg" style="width: auto; height: 50px;">
+           <p style="margin-top: auto; margin-bottom: auto; margin-left: 2%;">043-225323, 043-306250, 081-9641266</p>
+         </div>
+         <div class="row">
+           <img src="https://image.flaticon.com/icons/svg/376/376948.svg" style="width: auto; height: 50px;">
+           <p style="margin-top: auto; margin-bottom: auto; margin-left: 2%;"><%= raw t('address_detail')%></p>
+         </div>
+       </div>
       </div>
     </div>
   </div>
