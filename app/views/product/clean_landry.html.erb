@@ -1,0 +1,118 @@
+<title><%= t('title.product')%></title>
+<h4 style="margin: auto;text-align: center; margin-top: 5%;"><%= raw t('home.product.clean_landry')%></h4>
+
+<div class="container">
+  <div class="row">
+    <div class="uk-child-width-1-3@m" uk-grid>
+      <div uk-toggle="target: #green">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/greenwaks-600x600.png" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">GREEN WAKS</h3>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="../docs/images/light.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title">Media Top</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="green" uk-modal>
+  <div class="uk-modal-dialog" style="width: auto;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">GREEN WAKS</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider>
+            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-1@m">
+              <li>
+                <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_435122402_fullsize.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1>1</h1></div>
+              </li>
+              <li>
+                <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_732907375_fullsize.jpg" alt="">
+                <div class="uk-position-center uk-panel"><h1></h1></div>
+              </li>
+              <li>
+                <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/greenwaks-600x600.png" alt="">
+                <div class="uk-position-center uk-panel"><h1>3</h1></div>
+              </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                <%= raw t('home.landry.green')%>
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                เป็นผงสีขาว สารละลาย 1.0 % มีค่าความเป็นกรด-ด่างเท่ากับ 9.50-11.50 ที่อุณหภูมิ 25  องศาเซลเซียส เหมาะอย่างยิ่งสำหรับน้ำที่มีความกระด่างสูงกว่าปกติ ซักได้ดีทั้งอุณหภูมิสูงและอุณหภูมิต
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 1,000 กรัม / 1 ถุง <br> - น้ำหนักสุทธิ 1,500 กรัม / 1 ถุง <br>- น้ำหนักสุทธิ 25 กิโลกรัม/ 1 กล่อง
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="green" uk-modal>
+  <div class="uk-modal-dialog">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">GREEN WAKS</h2>
+    </div>
+    <div class="uk-modal-body">
+      <ul uk-accordion>
+        <li class="uk-open">
+          <a class="uk-accordion-title" href="#">รายละเอียด</a>
+          <div class="uk-accordion-content uk-text-large">
+            <%= raw t('home.landry.green')%>
+          </div>
+        </li>
+        <li>
+          <a class="uk-accordion-title" href="#">คุณสมบัติ</a>
+          <div class="uk-accordion-content uk-text-large">
+            เป็นผงสีขาว สารละลาย 1.0 % มีค่าความเป็นกรด-ด่างเท่ากับ 9.50-11.50 ที่อุณหภูมิ 25  องศาเซลเซียส เหมาะอย่างยิ่งสำหรับน้ำที่มีความกระด่างสูงกว่าปกติ ซักได้ดีทั้งอุณหภูมิสูงและอุณหภูมิต
+          </div>
+        </li>
+        <li>
+          <a class="uk-accordion-title" href="#">ขนาด</a>
+          <div class="uk-accordion-content uk-text-large">
+            - น้ำหนักสุทธิ 1,000 กรัม / 1 ถุง <br> - น้ำหนักสุทธิ 1,500 กรัม / 1 ถุง <br>- น้ำหนักสุทธิ 25 กิโลกรัม/ 1 กล่อง
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
