@@ -8,7 +8,19 @@ class ProductController < ApplicationController
 
   end
 
-  def cleaning_equipment
+  def cleaning_kitchen
+
+  end
+
+  def swimming_pool
+
+  end
+
+  def clean_landry
+
+  end
+
+  def industry_product
 
   end
 
