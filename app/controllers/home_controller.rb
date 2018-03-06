@@ -8,6 +8,14 @@ class HomeController < ApplicationController
 
   end
 
+  def contact
+
+  end
+
+  def order
+
+  end
+
   def set_locale
     session[:locale] = "th" if params[:locale] && params[:locale].downcase == "th"
     session[:locale] = "en" if params[:locale] && params[:locale].downcase == "en"

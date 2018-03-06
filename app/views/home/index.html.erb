@@ -183,84 +183,57 @@
 <div class="uk-section uk-section-large uk-section-muted" id="product">
   <h3 class="uk-text-center uk-text-uppercase"><%= t('title.our_product')%></h3>
   <div uk-slider="center: true">
-    <div class="uk-position-relative uk-visible-toggle uk-light">
-      <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
-        <li>
-          <a href="<%= cleaning_landry_path %>">
-            <div class="uk-card uk-card-default">
-              <div class="uk-card-media-top uk-text-center">
-                <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_754936478_fullsize.jpg" alt="">
-              </div>
-              <div class="uk-card-body">
-                <h3 class="uk-card-title uk-text-center"><%= t('home.product.clean_landry')%></h3>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="<%= swimming_pool_path %>">
-            <div class="uk-card uk-card-default">
-              <div class="uk-card-media-top uk-text-center">
-                <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_402642040_fullsize.jpg" alt="">
-              </div>
-              <div class="uk-card-body">
-                <h3 class="uk-card-title uk-text-center"><%= t('home.product.swimming_pool')%></h3>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="<%= cleaning_kitchen_path %>">
-            <div class="uk-card uk-card-default">
-              <div class="uk-card-media-top uk-text-center">
-                <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_647530237_fullsize.jpg" alt="">
-              </div>
-              <div class="uk-card-body">
-                <h3 class="uk-card-title uk-text-center"><%= t('home.product.kitchen')%></h3>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="<%= industry_product_path %>">
-            <div class="uk-card uk-card-default">
-              <div class="uk-card-media-top uk-text-center">
-                <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_795006630_fullsize.jpg" alt="">
-              </div>
-              <div class="uk-card-body">
-                <h3 class="uk-card-title uk-text-center"><%= t('home.product.cleaning_machine')%></h3>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="<%= cleaning_liquid_path %>">
-            <div class="uk-card uk-card-default">
-              <div class="uk-card-media-top uk-text-center">
-                <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_715746478_fullsize.jpg" alt="">
-              </div>
-              <div class="uk-card-body">
-                <h3 class="uk-card-title uk-text-center"><%= t('home.product.cleaning_liquid')%></h3>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="<%= cleaning_machine_path %>">
-            <div class="uk-card uk-card-default">
-              <div class="uk-card-media-top uk-text-center">
-                <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_676120974_fullsize.jpg" alt="">
-              </div>
-              <div class="uk-card-body">
-                <h3 class="uk-card-title uk-text-center"><%= t('home.product.machine_cleaning')%></h3>
-              </div>
-            </div>
-          </a>
-        </li>
-      </ul>
-      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    <div class="container">
+      <div class="row">
+        <div class="uk-grid">
+          <div class="uk-width-1-3 uk-text-center">
+            <a href="<%= cleaning_landry_path %>">
+              <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_754936478_fullsize.jpg" alt="" class="card-img-top" style="width: 300px; height: 300px;">
+              <div class="w-100"></div>
+              <div class="uk-text-bold uk-text-large" style="color: #000000;"><%= t('home.product.clean_landry')%></div>
+            </a>
+          </div>
+          <div class="uk-width-1-3 uk-text-center">
+            <a href="<%= swimming_pool_path %>">
+              <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_402642040_fullsize.jpg" alt="" class="card-img-top" style="width: 300px; height: 300px;">
+              <div class="w-100"></div>
+              <div class="uk-text-bold uk-text-large" style="color: #000000;"><%= t('home.product.swimming_pool')%></div>
+            </a>
+          </div>
+          <div class="uk-width-1-3 uk-text-center">
+            <a href="<%= cleaning_kitchen_path %>">
+              <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_647530237_fullsize.jpg" alt="" class="card-img-top" style="width: 300px; height: 300px;">
+              <div class="w-100"></div>
+              <div class="uk-text-bold uk-text-large" style="color: #000000;"><%= t('home.product.kitchen')%></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="uk-grid">
+          <!-- <div class="uk-width-1-3">
+            <a href="<%= industry_product_path %>">
+              <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_795006630_fullsize.jpg" alt="" class="card-img-top" style="width: 300px; height: 300px;">
+              <div class="w-100"></div>
+              <div class="uk-text-center uk-text-bold uk-text-large" style="color: #000000;"><%= t('home.product.cleaning_machine')%></div>
+            </a>
+          </div> -->
+          <div class="uk-width-1-3 uk-text-center">
+            <a href="<%= cleaning_liquid_path %>">
+              <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_715746478_fullsize.jpg" alt="" class="card-img-top" style="width: 300px; height: 300px;">
+              <div class="w-100"></div>
+              <div class="uk-text-bold uk-text-large" style="color: #000000;"><%= t('home.product.cleaning_liquid')%></div>
+            </a>
+          </div>
+          <div class="uk-width-1-3 uk-text-center">
+            <a href="<%= cleaning_machine_path %>">
+              <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_676120974_fullsize.jpg" alt="" class="card-img-top" style="width: 300px; height: 300px;">
+              <div class="w-100"></div>
+              <div class="uk-text-bold uk-text-large" style="color: #000000;"><%= t('home.product.machine_cleaning')%></div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
   </div>
 </div>

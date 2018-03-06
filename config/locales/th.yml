@@ -12,6 +12,7 @@ th:
   button:
     more: เพิ่มเติม
     contact: สั่งซื้อ
+    how_to: วิธีการสั่งซื้อ
 
   home:
     product:
@@ -21,7 +22,7 @@ th:
       special_cleaning: ผลิตภัณฑ์ซักรีดแบบพิเศษ
       cleaning_machine: หมวดทำความสะอาด สำหรับอุตสาหกรรม
       machine_cleaning: หมวดเครื่องทำความสะอาด
-      floor_scrub: "<strong>Champion เครื่องขัดพื้น 175 RPM.</strong>"
+      floor_scrub: "<strong>Champion เครื่องขัดพื้น</strong>"
       vaccum_cleaning: "<strong>NSS เครื่องดูดฝุ่นอัพไรท์ รุ่น Pacer 15 UE</strong>"
       cleaning_liquid: หมวดน้ำยาทำความสะอาด
       hybrid: หมวดประหยัดพลังงาน

@@ -1,7 +1,7 @@
 <title><%= t('title.product')%></title>
-<h4 style="margin: auto;text-align: center; margin-top: 5%;"><%= raw t('home.product.clean_landry')%></h4>
-
-<div class="container">
+<%= render "shared/tab" %>
+<h4 style="margin: auto;text-align: center; margin-top: 5%; margin-bottom: 5%;"><%= raw t('home.product.clean_landry')%></h4>
+<div class="container uk-margin-large-bottom" style="margin-left: auto; margin-right: auto;">
   <div class="row">
     <div class="uk-child-width-1-3@m" uk-grid>
       <div uk-toggle="target: #green">
@@ -14,22 +14,215 @@
           </div>
         </div>
       </div>
-      <div>
+      <div uk-toggle="target: #breachcx">
         <div class="uk-card uk-card-default">
           <div class="uk-card-media-top">
-            <img src="../docs/images/light.jpg" alt="">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/Bleach_CX_25kg-600x600.png" alt="">
           </div>
           <div class="uk-card-body">
-            <h3 class="uk-card-title">Media Top</h3>
+            <h3 class="uk-card-title uk-text-center">BLEACH CX</h3>
+          </div>
+        </div>
+      </div>
+      <div uk-toggle="target: #breachox">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/Bleach_OX_25kg-600x600.png" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">BLEACH OX</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="uk-child-width-1-3@m" uk-grid>
+      <div uk-toggle="target: #save">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/Save-600x600.png" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">SAVE</h3>
+          </div>
+        </div>
+      </div>
+      <div uk-toggle="target: #WAKS">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/Waks-600x600.png" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">WAKS</h3>
+          </div>
+        </div>
+      </div>
+      <div uk-toggle="target: #BUILDERA">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/Builder_A_25kg-600x600.png" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">BUILDER A</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="uk-child-width-1-3@m" uk-grid>
+      <div uk-toggle="target: #BLEACHC">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/Bleach_C_23kg-600x600.png" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">BLEACH C</h3>
+          </div>
+        </div>
+      </div>
+      <div uk-toggle="target: #WAKSALK">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/Waks_alk_20lit-600x600.png" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">WAKS ALK</h3>
+          </div>
+        </div>
+      </div>
+      <div uk-toggle="target: #spa">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/spaplus-600x600.png" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">SPA PLUS</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="uk-child-width-1-3@m" uk-grid>
+      <div uk-toggle="target: #BLEACHL">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/Bleach_L_20lit-600x600.png" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">BLEACH L</h3>
+          </div>
+        </div>
+      </div>
+      <div uk-toggle="target: #BLEACHCB">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/Bleach_CB_23kg-600x600.png" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">BLEACH CB</h3>
+          </div>
+        </div>
+      </div>
+      <div uk-toggle="target: #ENJOY">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_21325607_fullsize.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">ENJOY</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="uk-child-width-1-3@m" uk-grid>
+      <div uk-toggle="target: #BLOODOFF">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_754936478_fullsize.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">BLOOD OFF</h3>
+          </div>
+        </div>
+      </div>
+      <div uk-toggle="target: #Detergent">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_271054594_fullsize.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">Detergent B</h3>
+          </div>
+        </div>
+      </div>
+      <div uk-toggle="target: #Ironing">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_687648517_fullsize.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">Ironing Wax 8000</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="uk-child-width-1-3@m" uk-grid>
+      <div uk-toggle="target: #sourd">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_747057690_fullsize.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">Sour D</h3>
+          </div>
+        </div>
+      </div>
+      <div uk-toggle="target: #tanoff">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_744519918_fullsize.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">Tan Off</h3>
+          </div>
+        </div>
+      </div>
+      <div uk-toggle="target: #SOURS">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_184917964_fullsize.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">SOUR S</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="uk-child-width-1-3@m" uk-grid>
+      <div uk-toggle="target: #WAKSDET">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_369936577_fullsize.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">WAKS DET</h3>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 <div id="green" uk-modal>
-  <div class="uk-modal-dialog" style="width: auto;">
+  <div class="uk-modal-dialog" style="width: 70%;">
     <button class="uk-modal-close-default" type="button" uk-close></button>
     <div class="uk-modal-header">
       <h2 class="uk-modal-title">GREEN WAKS</h2>
@@ -37,8 +230,8 @@
     <div class="uk-modal-body">
       <div class="row">
         <div class="uk-column-1-2">
-          <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider>
-            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-1@m">
+          <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="autoplay: true">
+            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-1@m uk-text-center">
               <li>
                 <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_435122402_fullsize.jpg" alt="">
                 <div class="uk-position-center uk-panel"><h1>1</h1></div>
@@ -65,7 +258,7 @@
             <li>
               <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
               <div class="uk-accordion-content uk-text-large">
-                เป็นผงสีขาว สารละลาย 1.0 % มีค่าความเป็นกรด-ด่างเท่ากับ 9.50-11.50 ที่อุณหภูมิ 25  องศาเซลเซียส เหมาะอย่างยิ่งสำหรับน้ำที่มีความกระด่างสูงกว่าปกติ ซักได้ดีทั้งอุณหภูมิสูงและอุณหภูมิต
+                - เป็นผงสีขาว สารละลาย 1.0 % <br> - มีค่าความเป็นกรด-ด่างเท่ากับ 9.50-11.50 ที่อุณหภูมิ 25  องศาเซลเซียส <br> - เหมาะอย่างยิ่งสำหรับน้ำที่มีความกระด่างสูงกว่าปกติ ซักได้ดีทั้งอุณหภูมิสูงและอุณหภูมิ
               </div>
             </li>
             <li>
@@ -83,33 +276,828 @@
     </div>
   </div>
 </div>
-<div id="green" uk-modal>
-  <div class="uk-modal-dialog">
+<div id="breachcx" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
     <button class="uk-modal-close-default" type="button" uk-close></button>
     <div class="uk-modal-header">
-      <h2 class="uk-modal-title">GREEN WAKS</h2>
+      <h2 class="uk-modal-title">BLEACH CX</h2>
     </div>
     <div class="uk-modal-body">
-      <ul uk-accordion>
-        <li class="uk-open">
-          <a class="uk-accordion-title" href="#">รายละเอียด</a>
-          <div class="uk-accordion-content uk-text-large">
-            <%= raw t('home.landry.green')%>
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/Bleach_CX_25kg-600x600.png" alt="">
           </div>
-        </li>
-        <li>
-          <a class="uk-accordion-title" href="#">คุณสมบัติ</a>
-          <div class="uk-accordion-content uk-text-large">
-            เป็นผงสีขาว สารละลาย 1.0 % มีค่าความเป็นกรด-ด่างเท่ากับ 9.50-11.50 ที่อุณหภูมิ 25  องศาเซลเซียส เหมาะอย่างยิ่งสำหรับน้ำที่มีความกระด่างสูงกว่าปกติ ซักได้ดีทั้งอุณหภูมิสูงและอุณหภูมิต
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เป็นผงฟอกผ้าขาวและผ้าสีชนิดพิเศษใช้ฟอกผ้าได้ทั้งผ้าขาวและผ้าสี  ใช้ได้กับเส้นใยผ้าทุกชนิด  ประกอบด้วยสารฟอกชนิดออกซิเจน  ไม่ทำให้เส้นใยเหลืองหรือเปื่อยแม้ผ่านการฟอกหลายครั้ง
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+               - เป็นผงสีขาว สารละลาย 1.0% <br> - มีค่าความเป็นกรด-ด่างเท่ากับ 9-10 ที่อุณหภูมิ 25 องศาเซลเซียส<br> - มีส่วนประกอบของสารฟอกชนิดออกซิเจน
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 25 กิโลกรัม ต่อ กล่อง
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="breachox" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">BLEACH OX</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/Bleach_OX_25kg-600x600.png" alt="">
           </div>
-        </li>
-        <li>
-          <a class="uk-accordion-title" href="#">ขนาด</a>
-          <div class="uk-accordion-content uk-text-large">
-            - น้ำหนักสุทธิ 1,000 กรัม / 1 ถุง <br> - น้ำหนักสุทธิ 1,500 กรัม / 1 ถุง <br>- น้ำหนักสุทธิ 25 กิโลกรัม/ 1 กล่อง
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เป็นผงฟอกผ้าชนิดพิเศษ  ประกอบด้วยสารฟอกชนิดออกซิเจนที่ปลอดภัย  ไม่ทำให้เส้นใยทุกชนิดเหลืองหรือเปื่อยแม้ผ่านการฟอกหลายครั้ง  ใช้ได้ทั้งผ้าขาวและผ้าสี
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                - เป็นผงสีขาวไม่จับกันเป็นก้อน สารละลาย 1.0%<br> - มีค่าความเป็นกรด-ด่าง เท่ากับ 10-11 ที่อุณหภูมิ 25 องศาเซลเซียส<br> -  ประกอบด้วยสารฟอกชนิดออกซิเจน
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 25 กิโลกรัม ต่อ กล่อง
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="save" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">SAVE</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/Save-600x600.png" alt="">
           </div>
-        </li>
-      </ul>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เป็นผลิตภัณฑ์สำหรับขจัดคราบสกปรกออกจากผ้า ได้รับการพัฒนามาใช้กับผ้าสกปรกทุกขนาดใช้ได้ทั้งที่อุณหภูมิสูงและต่ำ เหมาะสำหรับผ้าขาวและผ้าสีเพราะไม่มีสารฟอกขาวเจือปน
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                - เป็นผงสีขาวไม่จับตัวเป็นก้อน<br> - มีค่าความเป็นกรด-ด่างเท่ากับ 10-11 ที่อุณหภูมิ 25 องศาเซลเซียส<br> - มีส่วนประกอบของสารลดแรงตึงผิว<br> - สามารถย่อยสลายทางชีวะภาพได้อย่างสมบูรณ์
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 25 กิโลกรัม ต่อ กล่อง
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="WAKS" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">WAKS</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/Waks-600x600.png" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เป็นผงซักฟอกที่ออกแบบมาเพื่อใช้กับเครื่องซักผ้าโดยเฉพาะ มีประสิทธิภาพดีเยี่ยมในการขจัดสิ่งสกปรกออกจากเส้นใยผ้าเหมาะอย่างยิ่งสำหรับน้ำที่มีความกระด้างสูงกว่าปกติ  ซักได้ดีทั้งอุณหภูมิสูงและอุณหภูมิต่ำ  ใช้ได้ทั้งผ้าขาวและผ้าสี
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                - เป็นผงสีขาวไม่จับกันเป็นก้อน<br> - มีค่าความเป็นกรด-ด่างเท่ากับ 9-10 ที่อุณหภูมิ 25 องศาเซลเซียส<br> -  มีส่วนประกอบของสาร C.M.C.ที่ป้องกันสิ่งสกปรกย้อนกลับมาติดเนื้อผ้า
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 25 กิโลกรัม ต่อ กล่อง
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="BUILDERA" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">BUILDER A</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/Builder_A_25kg-600x600.png" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เป็นผลิตภัณฑ์เสริมด่าง  ช่วยขจัดคราบฝังแน่นให้ออกจากเนื้อผ้า  ช่วยใน การขจัดสิ่งสกปรกให้ออกจากเนื้อผ้าโดยง่าย  ใช้ได้ทั้งผ้าขาวและผ้าสี  เหมาสำหรับแผนกซักรีดที่ทันสมัยเช่น โรงแรม   โรงพยาบาล  เป็นต้น
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                - เป็นผงละเอียดขาวบริสุทธิ์ ไม่จับกันเป็นก้อน<br> -  มีค่าความเป็นกรด-ด่าง เท่ากับ 10-11 ที่อุณหภูมิ 25 องศาเซลเซียส<br> -  สามารถละลายน้ำได้ทั้งในน้ำร้อนและน้ำเย็น
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 25 กิโลกรัม ต่อ กล่อง
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="BLEACHC" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">BLEACH C</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/Bleach_C_23kg-600x600.png" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เป็นผลิตภัณฑ์เคมีสำหรับการฟอกผ้าขาวเป็นสารอินทรีย์ที่ปลอดภัยต่อผ้าขาวทุกชนิด  ให้ความขาวแก่เนื้อผ้าพร้อมกับให้ความปลอดภัยต่อเส้นใยของผ้า  แม้ผ่านการฟอกหลายครั้ง  ใช้ได้กับผ้าฝ้ายเท่านั้น
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                - เป็นผงสีขาวไม่จับกันเป็นก้อน สารละลาย 1.0%<br> - มีค่าความเป็นกรด-ด่างเท่ากับ 9-10 ที่อุณหภูมิ 25 องศาเซลเซียส
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 25 กิโลกรัม ต่อ กล่อง
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="WAKSALK" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">WAKS ALK</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/Waks_alk_20lit-600x600.png" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เป็นผงซักฟอกที่ออกแบบมาเพื่อใช้กับเครื่องซักผ้าโดยเฉพาะ มีประสิทธิภาพดีเยี่ยมในการขจัดสิ่งสกปรกออกจากเส้นใยผ้าเหมาะอย่างยิ่งสำหรับน้ำที่มีความกระด้างสูงกว่าปกติ  ซักได้ดีทั้งอุณหภูมิสูงและอุณหภูมิต่ำ  ใช้ได้ทั้งผ้าขาวและผ้าสี
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                 - เป็นผงสีขาวไม่จับกันเป็นก้อน<br> - มีค่าความเป็นกรด-ด่างเท่ากับ 14 ที่อุณหภูมิ 25 องศาเซลเซียส<br> - มีส่วนประกอบของสาร C.M.C.ที่ป้องกันสิ่งสกปรกย้อนกลับมาติดเนื้อผ้า
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 20 ลิตร ต่อ ถัง
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="spa" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">SPA PLUS</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/spaplus-600x600.png" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เป็นผลิตภัณฑ์ทำความสะอาดผ้า  ประสิทธิภาพสูง  ที่สามารถขจัดคราบ  สมุนไพร ครีมและน้ำมันนวดตัว
+                มีส่วนประกอบของสารลดแรงตึงผิว ที่ช่วยขจัดไขมันและมีด่างวึ่งมีประสิทธิภาพในการทำความสะอาดได้ดีกับทุกเนื้อผ้าทุกชนิด และยังมีส่วนประกอบของสารเพิ่มความสดใสทำให้ผ้าดูเหมือนใหม่
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                - ลักษณะทั่วไปเป็นผงสีขาว <br>- ความเป็นกรด-ด่าง10.0-10.5 ที่อุณหภูมิ 250C <br> - ค่าความหนาแน่น0.985 ที่อุณหภูมิ 25 0C <br> - สามารถย่อยสลายทางชีวภาพได้อย่างสมบูรณ์
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 20 กิโลกรัม
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="BLEACHL" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">BLEACH L</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/Bleach_L_20lit-600x600.png" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                ผลิตภัณฑ์ฟอกผ้าขาว ชนิดน้ำผลิตภัณฑ์ฟอกผ้าขาวและฆ่าเชื้อคลอรีน ใช้ในการแช่ผ้า และสามารถใช้ในขั้นตอนการซักปกติร่วมกับผลิตภัณฑ์ซักผ้าได้
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                - ลักษณะทั่วไปเป็นผงสีขาว <br>- ความเป็นกรด-ด่าง10.0-10.5 ที่อุณหภูมิ 250C <br> - ค่าความหนาแน่น0.985 ที่อุณหภูมิ 25 0C <br> - สามารถย่อยสลายทางชีวภาพได้อย่างสมบูรณ์
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 20 กิโลกรัม ต่อ ถัง
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="BLEACHCB" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">ENJOY</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.peerapatmart.com/wp-content/uploads/2017/12/Bleach_CB_23kg-600x600.png" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                ผลิตภัณฑ์ฟอกผ้าขาว ชนิดผงใช้สำหรับฟอกผ้าขาว เป็นสารอินทรีย์ที่ปลอดภัยต่อผ้าขาวทุกชนิด แม้ผ่านการฟอกหลายครั้งเหมาะสำหรับผ้าฝ้าย
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                - เป็นผงสีขาวไม่จับกันเป็นก้อน   <br>- สารละลาย 1.0% มีค่าความเป็นกรด-ด่างเท่ากับ 9-10.0 ที่อุณหภูมิ 25 องศาเซลเซียส
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 23 กิโลกรัม ต่อ ถัง
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="ENJOY" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">ENJOY</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_21325607_fullsize.jpg" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เอ็นจอย ผลิตภัณฑ์น้ำยาซักผ้า ช่วยให้ผ้าขาวสะอาด คงไว้ซึ่งสีสันสดใส ความนุ่มนวลของเนื้อผ้า เหมาะสำหรับเนื้อผ้าทุกชนิด เสื้อผ้าที่ต้องถนอม เสื้อผ้าเด็ก ชุดชั้นใน ผ้าไหม
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                - เป็นของเหลวสีเหลือง สารละลาย 1.0% มีค่าความเป็นกรด-ด่างเท่ากับ 6-8 ที่อุณหภูมิ 25 องศาเซลเซียส<br>
+                - เป็นผลิตภัณฑ์ ที่มีส่วนผสมที่เป็นกลาง (pH Balance) อ่อนโยนต่อเส้นใยผ้า หอมติดผ้ามีส่วนผสมของสารลดแรงตึงผิว (Surfactant) ที่สามารถย่อยสลายได้ในธรรมชาติ (Biodegradable) ถุงชนิดเติมช่วยลดปริมาณขยะ และมลภาวะ
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 5 ลิตร / 1 แกลลอน
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="BLOODOFF" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">BLOOD OFF</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_754936478_fullsize.jpg" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เป็นผลิตภัณฑ์ขจัดคราบเลือด ที่มีส่วนผสมของเอ็นไซม์ที่ย่อยสลายเลือด  สามารถละลายคราบเลือดใหม่และคราบเลือดที่ผ่านการซักอบรีดแล้ว ใช้ได้ทั้งผ้าขาวและผ้าสี
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                - เป็นของเหลวสีน้ำตาล <br>
+                - มีส่วนผสมของเอ็นไซม์ที่ย่อยสลายคราบเลือด <br>
+                - มีกลิ่นเฉพาะตัว
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 2.5 ลิตร / 1 แกลลอน
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="Detergent" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">Detergent B</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_271054594_fullsize.jpg" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เปนผลิตภัณฑขจัดคราบสกปรกกอนการซัก หรือใชซักผา เหมาะสําหรับชุดชั้นใน เสื้อผาเด็กออน
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                - เปนของเหลวสีเหลืองออน   <br>
+                - สารละลาย 1.0% มีคาความเปนกรด-ดางเทากับ 6-8 ที่อุณหภูมิ 25 องศาเซลเซียส
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 5 ลิตร / 1 แกลลอน <br>
+                - น้ำหนักสุทธิ 20 ลิตร / 1 ถัง
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="Ironing" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">Ironing Wax 8000</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_687648517_fullsize.jpg" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เป็นผลิตภัณฑ์สำหรับเคลือบลูกกลิ้งในเครื่องรีดผ้าขนาด ใหญ่  เพื่อป้องกันไม่ให้ผ้าที่รีดติดลูกกลิ้ง    ช่วยยืดอายุการใช้งานของและผ้าสักหลาดที่หุ้มลูกกลิ้ง  สามารถป้องกันการเกิดสนิมกับเครื่องรีดได้
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                - เป็นครีมสีขาว    <br>
+                - หลอมเหลวง่ายที่อุณหภูมิ 60 องศาเซลเซียส <br>
+                - เป็นสารสกัดจากปิโตรเลียม <br>
+                - ไม่ติดไฟที่อุณหภูมิต่ำกว่า 130 องศาเซลเซียส <br>
+                - ไม่มีสารกัดกร่อนเครื่องรีด <br>
+                - ไม่มีสารที่เป็นอันตรายต่อผู้ใช้
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 2 กิโลกรัม ต่อ กระป๋อง<br>
+                - น้ำหนักสุทธิ 10 กิโลกรัม ต่อ ถัง
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="Detergent" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">Ironing Wax 8000</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_687648517_fullsize.jpg" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เป็นผลิตภัณฑ์สำหรับเคลือบลูกกลิ้งในเครื่องรีดผ้าขนาด ใหญ่  เพื่อป้องกันไม่ให้ผ้าที่รีดติดลูกกลิ้ง    ช่วยยืดอายุการใช้งานของและผ้าสักหลาดที่หุ้มลูกกลิ้ง  สามารถป้องกันการเกิดสนิมกับเครื่องรีดได้
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                - เป็นครีมสีขาว    <br>
+                - หลอมเหลวง่ายที่อุณหภูมิ 60 องศาเซลเซียส <br>
+                - เป็นสารสกัดจากปิโตรเลียม <br>
+                - ไม่ติดไฟที่อุณหภูมิต่ำกว่า 130 องศาเซลเซียส <br>
+                - ไม่มีสารกัดกร่อนเครื่องรีด <br>
+                - ไม่มีสารที่เป็นอันตรายต่อผู้ใช้
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 2 กิโลกรัม ต่อ กระป๋อง<br>
+                - น้ำหนักสุทธิ 10 กิโลกรัม ต่อ ถัง
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="DOVY" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">DOVY</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_271054594_fullsize.jpg" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เปนผลิตภัณฑปรับผานุม ชวยถนอมเสนไยผาและปรับผาใหนุมฟูสวมใสสบายเนื้อผาไมรีบติดตัว ผารีดเรียบงายใชไดกับทุกเนื้อผา
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                - เปนของเหลวสีเหลืองออน   <br>
+                - สารละลาย 1.0% มีคาความเปนกรด-ดางเทากับ 6-8 ที่อุณหภูมิ 25 องศาเซลเซียส
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 5 ลิตร / 1 แกลลอน <br>
+                - น้ำหนักสุทธิ 20 ลิตร / 1 ถัง
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="sourd" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">SOUR D</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_747057690_fullsize.jpg" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เป็นผลิตภัณฑ์สำหรับขจัดสารเคมีตกค้างบนผ้า รวมทั้งขจัดคราบสกปรก และสนิมเหล็กออกจากเนื้อผ้าได้ในเวลาเดียวกัน ปลอดภัยต่อผ้าทุกชนิด  สามารถใช้ได้ทั้งผ้าขาวและผ้าสี
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                - เป็นผงสีขาวอมเหลือง      <br>
+                - ไม่จับตัวเป็นก้อน <br>
+                - มีค่าความเป็นกรด-ด่าง เท่ากับ 3-4 ที่อุณหภูมิ 25 องศาเซลเซียส
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 20 กิโลกรัม / 1 ถัง
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="SOURS" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">SOUR S</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_184917964_fullsize.jpg" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เป็นผลิตภัณฑ์ที่ใช้สำหรับล้างผ้า สามารถขจัดคลอรีนที่ตกค้างบนเนื้อผ้าให้มีสภาพเป็นกลาง ช่วยยืดอายุการใช้งานของเนื้อผ้าให้ยาวนานขึ้น ใช้ได้กับผ้าทุกชนิดทั้งผ้าขาวและผ้าสี เหมาะสำหรับใช้ในโรงแรม โรงพยาบาล และสถานซักรีดทั่วๆไป
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                - เป็นผงสีเหลืองอ่อน <br>
+                - ไม่จับตัวเป็นก้อน <br>
+                - มีค่าความเป็นกรด-ด่าง เท่ากับ 5-6 ที่อุณหภูมิ 25 องศาเซลเซียส สามารถละลายน้ำได้ดี
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 25 กิโลกรัม / 1 กล่อง <br>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="tanoff" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">Tan Off</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_744519918_fullsize.jpg" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เป็นเคมีสูตรพิเศษ ใช้สำหรับขจัดคราบยางผลไม้ และคราบเชื้อราได้ดี เพราะผลิตจากสารเคมีที่เลือกสรรแล้ว ใช้ได้ทั้งผ้าขาวและผ้าสี เหมาะสำหรับเส้นใยผ้าทุกชนิด
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                - เป็นผงสีขาว  <br>
+                - มีกลิ่นเฉพาะตัว  <br>
+                - สารละลาย 1% มีสภาพเป็นกรด-ด่าง เท่ากับ 10-11ละลายได้ดีในน้ำ อุณหภูมิ 60-70 องศาเซลเซียส
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 3 กิโลกรัม / 1 ถัง <br>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="WAKSDET" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">WAKS DET</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://thaitechno.net/uploadedimages/c1/Product_37449_369936577_fullsize.jpg" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                 เป็นผงซักฟอกที่ออกแบบมาเพื่อใช้กับเครื่องซักผ้าโดยเฉพาะ มีประสิทธิภาพดีเยี่ยมในการขจัดสิ่งสกปรกออกจากเส้นใยผ้าเหมาะอย่างยิ่งสำหรับน้ำที่มีความกระด้างสูงกว่าปกติ  ซักได้ดีทั้งอุณหภูมิสูงและอุณหภูมิต่ำ ใช้ได้ทั้งผ้าขาวและผ้าสี
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+                - เป็นผงสีขาวไม่จับกันเป็นก้อน   <br>
+                - มีค่าความเป็นกรด-ด่างเท่ากับ 14 ที่อุณหภูมิ 25 องศาเซลเซียส <br>
+                -  มีส่วนประกอบของสาร C.M.C.ที่ป้องกันสิ่งสกปรกย้อนกลับมาติดเนื้อผ้า
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนักสุทธิ 3 กิโลกรัม / 1 ถัง <br>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="uk-modal-footer uk-text-right">
       <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>

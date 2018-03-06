@@ -25,16 +25,16 @@
         </ul>
         <div class="uk-navbar-right">
           <ul class="uk-navbar-nav">
-            <li class="active"><a href="/" style="font-size: 20px;" class="uk-text-uppercase white-text"><%= t('title.home')%></a></li>
+            <li><a href="/" style="font-size: 20px;" class="uk-text-uppercase white-text"><%= t('title.home')%></a></li>
             <li><a href="/#product" class="uk-text-uppercase white-text" style="font-size: 20px;"><%= t('title.product')%></a></li>
-            <li><a href="/#product" class="uk-text-uppercase white-text" style="font-size: 20px;"><%= t('button.contact')%></a></li>
             <li><a href="/contact" class="uk-text-uppercase white-text" style="font-size: 20px;"><%= t('title.contact')%></a></li>
-            <li class="<%= "active" if session[:locale] == "th" %>" onclick="set_locale('th')">
+            <li><a href="/order" class="uk-text-uppercase white-text" style="font-size: 20px;"><%= t('button.contact')%></a></li>
+            <!-- <li class="<%= "active" if session[:locale] == "th" %>" onclick="set_locale('th')">
               <a href="#" class="uk-text-uppercase white-text" style="font-size: 20px;"> TH </a>
             </li>
             <li class="<%= "active" if session[:locale] == "en" %>" onclick="set_locale('en')">
               <a href="#" class="uk-text-uppercase white-text" style="font-size: 20px;"> EN </a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </nav>
@@ -84,7 +84,7 @@
                   <i class="material-icons medium uk-margin-top">call</i>
                 </div>
                 <div class="col s9">
-                  <h5 class="white-text uk-text-bold" style="line-height: 1.5;">(+66)86-8523976 <br> (+66)86-8523976</h5>
+                  <h5 class="white-text uk-text-bold" style="line-height: 1.5;">(+66)43-009744 <br> (+66)86-8523976</h5>
                 </div>
               </div>
             </li>
