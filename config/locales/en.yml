@@ -31,14 +31,14 @@
 
 en:
   org_name: "Northeastern Supplies.Co.Ltd"
-  content: "Cleaning Machines, Cleaning Liquids and Cleaning Equipment"
+  content: "Cleaning Machines<br> Cleaning Liquids <br> Cleaning Equipment"
   address: Address
   address_detail: "11/3 Srithat Prachasanti road, <br>Naimueng sub-district, Khonkaen district, Khonkaen 40000"
   title:
     home: Home
     product: Products
     contact: Contact
-    our_product: Our Products
+    our_product: Products
     details: Details
   button:
     more: More
@@ -46,10 +46,16 @@ en:
 
   home:
     product:
-      cleaning_machine: Creaning Machine
+      clean_landry: Commercial Landry
+      kitchen: Kitchen Products
+      swimming_pool: Swimming Pool Products
+      special_cleaning: Landry Products For Special Customers
+      cleaning_machine: Industrial Cleaning Products
+      machine_cleaning: Cleaning Machine
       floor_scrub: "<strong>Champion Scrubbing Machine 175 RPM.</strong>"
       vaccum_cleaning: "<strong>12 and 15-inch Single-Motor Upright Vacuums</strong>"
-      cleaning_liquid: Cleaning Liquid
+      cleaning_liquid: Cleaning Liquid Products
+      hybrid: Hybrid Products
       toilet: "<strong>N-Rust</strong> <br> Toilet Cleaning Liquid"
       wax_floor: "<strong>Buff & Shine</strong> <br>Wax Floor Care"
       cleaning_spare: Cleaning Machine Spare Part

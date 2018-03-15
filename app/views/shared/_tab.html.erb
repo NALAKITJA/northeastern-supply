@@ -1,0 +1,31 @@
+<div class="row uk-margin-large-top uk-text-center">
+  <p uk-margin>
+    <a class="uk-button uk-button-default uk-button-large uk-text-large" href="/cleaning/landry" id="landry"><%= raw t('home.product.clean_landry')%></a>
+    <a class="uk-button uk-button-default uk-button-large uk-text-large" href="/cleaning/kitchen" id="kitchen"><%= raw t('home.product.kitchen')%></a>
+    <a class="uk-button uk-button-default uk-button-large uk-text-large" href="/cleaning/liquid" id="liquid"><%= raw t('home.product.cleaning_liquid')%></a>
+    <a class="uk-button uk-button-default uk-button-large uk-text-large" href="/cleaning/swimming_pool" id="swimming_pool"><%= raw t('home.product.swimming_pool')%></a>
+    <a class="uk-button uk-button-default uk-button-large uk-text-large" href="/cleaning/machine" id="machine"><%= raw t('home.product.machine_cleaning')%></a>
+  </p>
+</div>
+
+
+<script type="text/javascript">
+  path = window.location.pathname.substring(1).split("/")[1]
+    switch (path) {
+      case 'landry':
+      $('#landry').addClass('uk-active'); break;
+
+      case 'kitchen':
+      $('#kitchen').addClass('uk-active'); break;
+
+      case 'liquid':
+      $('#liquid').addClass('uk-active'); break;
+
+      case 'machine':
+      $('#machine').addClass('uk-active'); break;
+
+      case 'swimming_pool':
+      $('#swimming_pool').addClass('uk-active'); break;
+
+  }
+</script>
