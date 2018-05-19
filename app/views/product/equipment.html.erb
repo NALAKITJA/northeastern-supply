@@ -1,0 +1,81 @@
+<title><%= t('title.product')%></title>
+<%= render "shared/tab" %>
+<div class="row">
+  <div class="uk-child-width-1-3@m" uk-grid>
+    <div uk-toggle="target: #UNGER0">
+      <div class="uk-card uk-card-default">
+        <div class="uk-card-media-top uk-text-center">
+          <img src="http://market.kapook.com/upload_contents/product/2014-11-05/545989dcef7296854f000003-2-20141105092220-32554d9a7db45630b5ff5b70d99a5b5e.jpg" width="50%" height="50%" alt="">
+        </div>
+        <div class="uk-card-body">
+          <h3 class="uk-card-title uk-text-center">ชุดเช็ดกระจก UNGER</h3>
+        </div>
+      </div>
+    </div>
+    <div uk-toggle="target: #vaccum_cleaning">
+      <div class="uk-card uk-card-default">
+        <div class="uk-card-media-top">
+          <img src="https://images.jmcatalog.com/prdimgs/SPEC33Tr1l8/NSS/450/NSS9600121.JPG" alt="">
+        </div>
+        <div class="uk-card-body">
+          <h3 class="uk-card-title uk-text-center"><%= raw t('home.product.vaccum_cleaning')%></h3>
+        </div>
+      </div>
+    </div>
+    <div uk-toggle="target: #ozone">
+      <div class="uk-card uk-card-default">
+        <div class="uk-card-media-top">
+          <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_62121280_fullsize.jpg" alt="">
+        </div>
+        <div class="uk-card-body">
+          <h3 class="uk-card-title uk-text-center"><%= raw t('home.product.ozone')%></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="UNGER0" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">ชุดเช็ดกระจก UNGER</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://market.kapook.com/upload_contents/product/2014-11-05/545989dcef7296854f000003-2-20141105092220-32554d9a7db45630b5ff5b70d99a5b5e.jpg" width="50%" height="50%" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เครื่องเป่าพรม Aero Plus ที่ให้ขนาดแรงเป่าลม 3 ระดับ ด้วยมอเตอร์ที่มีขนาดใหญ่ ทำให้พรมแห้งเร็ว หมดปัญหาเรื่องกลิ่นอับ วัสดุแข็งแรงทนทานผลิต จาก Rotocast Polyethylene housing
+                พร้อมชุดล้อลาก เคลื่อนย้ายสะดวก
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+               - ทำให้พรมแห้งเร็ว  <br>
+               - วัสดุแข็งแรงทนทาน  <br>
+               - เคลื่อนย้ายสะดวก
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - สูง 48.3 เซนติเมตร <br>
+                - กว้าง 41.3 เซนติเมตร <br>
+                - ยาว 50.8 เซนติเมตร
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>

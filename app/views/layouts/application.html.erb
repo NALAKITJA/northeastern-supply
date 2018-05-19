@@ -11,11 +11,10 @@
       window.$crisp=[];
       window.CRISP_WEBSITE_ID="4c1a1f48-8048-4882-a3bd-45401d5d0fcf";
       (function(){
-        d = document;
-        s = d.createElement("script");
-        s.src = "https://client.crisp.chat/l.js";
-        s.async=1;d.getElementsByTagName("head")[0].appendChild(s);
-      })();
+        d=document;
+        s=d.createElement("script");
+        s.src="https://client.crisp.chat/l.js";
+        s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
     </script>
   </head>
 
@@ -109,3 +108,17 @@
     </div>
   </footer>
 </html>
+
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCAUCZAHRVxPhFT8jDHnx3QWmUy-6dNnUU",
+    authDomain: "northeastern-supplies-192909.firebaseapp.com",
+    databaseURL: "https://northeastern-supplies-192909.firebaseio.com",
+    projectId: "northeastern-supplies-192909",
+    storageBucket: "",
+    messagingSenderId: "368564291211"
+  };
+  firebase.initializeApp(config);
+</script>

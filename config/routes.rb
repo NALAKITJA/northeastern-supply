@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'cleaning/landry' => 'product#clean_landry',  as: :cleaning_landry
   get 'cleaning/swimming_pool' => 'product#swimming_pool',  as: :swimming_pool
   get 'cleaning/industry_product' => 'product#industry_product',  as: :industry_product
+  get 'cleaning/equipment' => 'product#equipment', as: :equipment
   get 'contact' => 'home#contact', as: :contact
   get 'order' => 'home#order', as: :order
 
