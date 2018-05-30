@@ -31,6 +31,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'pg', '~> 0.18'
+gem 'nokogiri', '~> 1.8.2'
+gem 'rails-html-sanitizer', '~> 1.0.4'
+gem 'loofah','~> 2.2.1'
 
 # Use Capistrano for deployment
 gem "thin"
