@@ -4,33 +4,98 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
 
   <body>
-    <nav class="navbar fixed-top navbar-light" style="background-color: #FFFFFF;">
-      <a class="navbar-brand" href="/"><%= image_tag("logo.png", style: "width: 90px;height: 50px;") %></a>
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active link" href="/"><%= t('title.home')%></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link link" href="/#products"><%= t('title.product')%></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link link" href="/#contact"><%= t('title.contact')%></a>
-        </li>
-        <li class="nav-item">
-          <%= render 'shared/change_language'%>
-        </li>
-      </ul>
-    </nav>
-    <%= yield %>
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+      <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980; height: auto;background-color: #009688;">
+        <div class="uk-navbar-left">
+          <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="/"><%= image_tag("logo-white.png", style: "width: 90px;height: 50px;") %></a></li>
+          </ul>
+        </div>
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">three</a></li>
+        </ul>
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+            <li><a href="/" style="font-size: 20px;" class="uk-text-uppercase white-text"><%= t('title.home')%></a></li>
+            <li><a href="/#product" class="uk-text-uppercase white-text" style="font-size: 20px;"><%= t('title.product')%></a></li>
+            <li><a href="/contact" class="uk-text-uppercase white-text" style="font-size: 20px;"><%= t('title.contact')%></a></li>
+            <li><a href="/order" class="uk-text-uppercase white-text" style="font-size: 20px;"><%= t('button.contact')%></a></li>
+            <!-- <li class="<%= "active" if session[:locale] == "th" %>" onclick="set_locale('th')">
+              <a href="#" class="uk-text-uppercase white-text" style="font-size: 20px;"> TH </a>
+            </li>
+            <li class="<%= "active" if session[:locale] == "en" %>" onclick="set_locale('en')">
+              <a href="#" class="uk-text-uppercase white-text" style="font-size: 20px;"> EN </a>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <%= yield %>
+    <script>
+      function set_locale(type){
+        $.ajax({
+          method: "GET",
+          url: "/set_locale",
+          data: {
+            locale: type
+          },
+        }).done(function (html) {
+          location.reload();
+        });
+      }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   </body>
+  <footer class="page-footer" style="background-color: #009688;">
+    <div class="container">
+      <div class="row uk-margin-large-top">
+        <div class="col l6 s12@s">
+          <h5 class="white-text uk-text-bold"><%= t('org_name')%></h5>
+          <p class="white-text uk-text-bold"><%= raw t('address_detail')%></p>
+        </div>
+        <div class="col l4 offset-l2 s12@s">
+          <ul>
+            <li>
+              <div class="row" style="margin-bottom: auto;">
+                <div class="col s1@s">
+                  <i class="material-icons medium">mail_outline</i>
+                </div>
+                <div class="col s9">
+                  <h5 class="white-text uk-text-bold" style="line-height: 1.5;">nescokkn@gmail.com</h5>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col s1@s">
+                  <i class="material-icons medium uk-margin-top">call</i>
+                </div>
+                <div class="col s9">
+                  <h5 class="white-text uk-text-bold" style="line-height: 1.5;">(+66)43-009744 <br> (+66)86-8523976</h5>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © <%= Time.now.strftime('%Y')%> Copyright <%= t('org_name')%>
+      </div>
+    </div>
+  </footer>
 </html>

@@ -1,188 +1,294 @@
 <title><%= t('title.product')%></title>
-<div class="w3-container" style="text-align: center;">
-  <h4 style="margin: auto;text-align: center; margin-top: 5%;"><%= t('home.product.cleaning_machine')%></h4>
-  <div class="row" style="margin: auto; padding: 3% 10%;">
-    <div class="col-sm-4 box" data-toggle="modal" data-target="#cleaning_machine">
-      <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_197579320_fullsize.jpg" class="img-thumbnail" style="width:70%;">
-      <p style="text-align: center; font-size: 20px;padding-top: 10%;"><%= raw t('home.product.floor_scrub')%></p>
-    </div>
-    <div class="col-sm-4 box" data-toggle="modal" data-target="#vaccum_cleaning">
-      <img src="https://images.jmcatalog.com/prdimgs/SPEC33Tr1l8/NSS/450/NSS9600121.JPG" class="img-thumbnail" style="width:70%;">
-      <p style="text-align: center; font-size: 20px;padding-top: 10%;"><%= raw t('home.product.vaccum_cleaning')%></p>
-    </div>
-    <div class="col-sm-4 box" data-toggle="modal" data-target="#ozone">
-      <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_62121280_fullsize.jpg" class="img-thumbnail" style="width:70%;">
-      <p style="text-align: center; font-size: 20px;padding-top: 10%;"><%= raw t('home.product.ozone')%></p>
-    </div>
-  </div>
-  <div class="row" style="margin: auto;  padding: 0% 10% 5%;">
-    <div class="col-sm-4 box" data-toggle="modal" data-target="#wet_vacuum">
-      <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_59526951_fullsize.jpg" class="img-thumbnail" style="width:70%;">
-      <p style="text-align: center; font-size: 20px;padding-top: 10%;"><%= raw t('home.product.wet_vacuum')%></p>
-    </div>
-    <div class="col-sm-4 box" data-toggle="modal" data-target="#carpet_blower">
-      <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_21181123_fullsize.jpg" class="img-thumbnail" style="width:70%;">
-      <p style="text-align: center; font-size: 20px;padding-top: 10%;"><%= raw t('home.product.carpet_blower')%></p>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="cleaning_machine">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+<%= render "shared/tab" %>
+<h4 style="margin: auto;text-align: center; margin-top: 5%; margin-bottom: 5%;"><%= t('home.product.machine_cleaning')%></h4>
+<div class="container uk-margin-large-bottom" style="margin-left: auto; margin-right: auto;">
+  <div class="row">
+    <div class="uk-child-width-1-3@m" uk-grid>
+      <div uk-toggle="target: #breachcx">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_197579320_fullsize.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center"><%= raw t('home.product.floor_scrub')%></h3>
+          </div>
+        </div>
       </div>
-      <div class="modal-body" style="text-align: center;">
-        <h4 class="modal-title"><%= raw t('home.product.floor_scrub')%></h4><br>
-        <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_197579320_fullsize.jpg" class="img-thumbnail" style="width:70%;"><br>
-        <div class="container" style="margin-top: 2%; height: 300px;">
-          <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#details1"><%= t('title.details')%></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#contact1"><%= t('button.contact')%></a>
-            </li>
-          </ul>
-          <!-- Tab panes -->
-          <div class="tab-content">
-            <div id="details1" class="container tab-pane active"><br>
-              <p style="text-align: left; font-size: 13px;"><%= raw t('home.machine.floor')%></p>
-            </div>
-            <div id="contact1" class="container tab-pane fade" style="margin-left: 10%;"><br>
-              <%= render 'shared/contact'%>
-            </div>
+      <div uk-toggle="target: #vaccum_cleaning">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="https://images.jmcatalog.com/prdimgs/SPEC33Tr1l8/NSS/450/NSS9600121.JPG" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center"><%= raw t('home.product.vaccum_cleaning')%></h3>
+          </div>
+        </div>
+      </div>
+      <div uk-toggle="target: #ozone">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_62121280_fullsize.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center"><%= raw t('home.product.ozone')%></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="uk-child-width-1-3@m" uk-grid>
+      <div uk-toggle="target: #green">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_59526951_fullsize.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center">NSS เครื่องดูดฝุ่น & ดูดน้ำ รุ่น Alpha 30</h3>
+          </div>
+        </div>
+      </div>
+      <div uk-toggle="target: #breach">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_21181123_fullsize.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-text-center"><%= raw t('home.product.carpet_blower')%></h3>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="modal fade" id="vaccum_cleaning">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <div class="modal-body" style="text-align: center;">
-        <h4 class="modal-title"><%= raw t('home.product.vaccum_cleaning')%></h4><br>
-        <img src="https://images.jmcatalog.com/prdimgs/SPEC33Tr1l8/NSS/450/NSS9600121.JPG" class="img-thumbnail" style="width:70%;"><br>
-        <div class="container" style="text-align: center; margin-top: 2%; height: 270px;">
-          <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#details"><%= t('title.details')%></a>
+<div id="breachcx" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title"><%= raw t('home.product.floor_scrub')%></h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_197579320_fullsize.jpg" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เครื่องขัดพื้นระบบเฟืองขับเคลื่อน ความเร็ว 175 รอบต่อนาที เครื่องขัดพื้นคุณภาพสูงสำหรับงานหนักและงานทั่วไป มีหลายขนาดให้เลือกใช้ตั้งแต่ 12″ – 20″
+                เป็นเครื่องขัดที่ถูกออกแบบให้เหมาะสมสำหรับงานขัดพื้นทำความสะอาด และงานขัดพื้นเพิ่มความเงา รวมทั้งใช้เครื่องขัดในการขัดพื้นพรมโดยใช้น้ำยาทำความสะอาดสำหรับพื้นพรม
+                เครื่องขัดพื้นที่มีประสิทธิภาพจะช่วยให้งานใช้เวลาที่น้อยลง และ ประหยัดน้ำยาทำความสะอาดอีกด้วย เครื่องขัดพื้นทุกตัวถูกออกแบบมาด้วยขนาดและน้ำหนักที่เหมาะสมกับผู้ใช้งาน
+                ช่วยให้งานทำความสะอาดเป็นงานที่ง่ายขึ้น
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#contact"><%= t('button.contact')%></a>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+               - ระบบปรับด้าม starlock fully folding style เพิ่มความคล่องตัว และกระชับ เหมาะสมกับผู้ใช้งาน <br>
+               - คันบังคับและด้ามจับหุ้มยางสังเคราะห์ เหมาะสมกับผู้ใช้งาน แข็งแรงและลดไฟฟ้าสถิตย์ <br>
+               - ล้อยาง unmarking ขนาด 4″ ไม่ทิ้งรอยสกปรก และ ไม่มีเสียงรบกวนเวลาเคลื่อนย้าย <br>
+               - ยางกันกระแทกรอบด้าน ลดความเสียหายต่อกำแพงและเฟอร์นิเจอร์ <br>
+               - ระบบเฟืองขับเคลื่อน ปราศจากเสียงรบกวน ทนทานงานหนัก <br>
+               - ตัวถังอลูมิเนียมอัลลอย แข็งแรงทนทาน ปราศจากสนิม <br>
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - ขนาดแปรง 16 นิ้ว <br>
+                - ขนาดแปรง 18 นิ้ว <br>
+                - ขนาดแปรง 20 นิ้ว
+              </div>
             </li>
           </ul>
-          <!-- Tab panes -->
-          <div class="tab-content">
-            <div id="details" class="container tab-pane active"><br>
-              <p><%= raw t('home.machine.vacuum')%></p>
-            </div>
-            <div id="contact" class="container tab-pane fade" style="margin-left: 10%;"><br>
-              <%= render 'shared/contact'%>
-            </div>
-          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<div class="modal fade" id="carpet_blower">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <div class="modal-body" style="text-align: center;">
-        <h4 class="modal-title"><%= raw t('home.product.carpet_blower')%></h4><br>
-        <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_21181123_fullsize.jpg" class="img-thumbnail" class="img-thumbnail" style="width:70%;"><br>
-        <div class="container" style="text-align: center; margin-top: 2%; height: 270px;">
-          <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#details2"><%= t('title.details')%></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#contact2"><%= t('button.contact')%></a>
-            </li>
-          </ul>
-          <!-- Tab panes -->
-          <div class="tab-content">
-            <div id="details2" class="container tab-pane active"><br>
-              <p><%= raw t('home.machine.carpet_blower')%></p>
-            </div>
-            <div id="contact2" class="container tab-pane fade" style="margin-left: 10%;"><br>
-              <%= render 'shared/contact'%>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
     </div>
   </div>
 </div>
-<div class="modal fade" id="ozone">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <div class="modal-body" style="text-align: center;">
-        <h4 class="modal-title"><%= raw t('home.product.ozone')%></h4><br>
-        <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_62121280_fullsize.jpg" class="img-thumbnail" style="width:70%;"><br>
-        <div class="container" style="text-align: left; margin-top: 2%; height: 270px;">
-          <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#details3"><%= t('title.details')%></a>
+<div id="vaccum_cleaning" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title"><%= raw t('home.product.vaccum_cleaning')%></h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="https://images.jmcatalog.com/prdimgs/SPEC33Tr1l8/NSS/450/NSS9600121.JPG" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เครื่องดูดฝุ่นอัพไรท์ เป็นนวัตกรรมเครื่องดูดฝุ่นล่าสุด ที่ใช้มอเตอร์ตั้งขึ้นเพียงตัวเดียวในการดูดฝุ่น
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#contact3"><%= t('button.contact')%></a>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+               - มอเตอร์ขนาด 1.5 แรงม้า ให้พลังดูดสูง พร้อมแปรงตะกรุยพรมแบบเซฟล่อนเพิ่มความสะอาดในการดูดฝุ่น <br>
+               - เครื่องมีน้ำหนักเบา ออกแบบตามหลักสรีระศาสตร์เพื่อความสะดวกในการใช้งาน <br>
+               - เปลี่ยนถุงดักฝุ่นได้ง่าย <br>
+               - คลัชเชิงกลที่จะตัดการทำงานของแปรงในกรณีที่แปรงติด <br>
+               - ท่อดูดถอดประกอบง่าย ทำให้แก้ไขการอุดตันได้รวดเร็ว <br>
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - หน้ากว้าง 12 นิ้ว <br>
+                - หน้ากว้าง 15 นิ้ว
+              </div>
             </li>
           </ul>
-          <!-- Tab panes -->
-          <div class="tab-content">
-            <div id="details3" class="container tab-pane active"><br>
-              <p><%= raw t('home.machine.ozone')%></p>
-            </div>
-            <div id="contact3" class="container tab-pane fade" style="margin-left: 10%;"><br>
-              <%= render 'shared/contact'%>
-            </div>
-          </div>
         </div>
       </div>
     </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
   </div>
 </div>
-<div class="modal fade" id="wet_vacuum">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-      <div class="modal-body" style="text-align: center;">
-        <h4 class="modal-title"><%= raw t('home.product.wet_vacuum')%></h4><br>
-        <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_59526951_fullsize.jpg" class="img-thumbnail" style="width:70%;"><br>
-        <div class="container" style="text-align: left; margin-top: 2%; height: 270px;">
-          <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#details4"><%= t('title.details')%></a>
+<div id="ozone" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title"><%= raw t('home.product.ozone')%></h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_62121280_fullsize.jpg" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เครื่องโอโซน ดับกลิ่น-ฆ่าเชื้อ OZONE GENESIS UVO 5000
+                เป็นเครื่องกำจัดกลิ่นไม่พึงประสงค์และฆ่าเชื้อโรค เหมาะสำหรับห้องที่ต้องการดับกลิ่นแบบเร่งด่วน
+                ใช้ได้ทั้งห้องนอน, ห้องรับแขก, ห้องอาหาร น้ำหนักเบาเคลื่อนย้ายง่าย
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#contact4"><%= t('button.contact')%></a>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+               - Area size: 50 - 150  sq.m. <br>
+               - Ozone Volume: 2,500 Mg. / hr. ( 2.50  ppm) <br>
+               - Timer Seting: 5  sec. -  300  hr. <br>
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - น้ำหนัก 6.8 กิโลกรัม
+              </div>
             </li>
           </ul>
-          <!-- Tab panes -->
-          <div class="tab-content">
-            <div id="details4" class="container tab-pane active"><br>
-              <p><%= raw t('home.machine.wet_vacuum')%></p>
-            </div>
-            <div id="contact4" class="container tab-pane fade" style="margin-left: 10%;"><br>
-              <%= render 'shared/contact'%>
-            </div>
-          </div>
         </div>
       </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="green" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title">NSS เครื่องดูดฝุ่น & ดูดน้ำ (Wet & Dry Vacuums) รุ่น Alpha 30</h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_59526951_fullsize.jpg" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เครื่องดูดฝุ่น- ดูดน้ำ 100 ลิตร เป็นตัวเลือกสำหรับความประหยัดเพื่อใช้งานนานหลายปี
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+               - ตัวถังโพลีเอธีลีนน้ำหนักเบา  <br>
+               - ไม่ขึ้นสนิม  <br>
+               - มอเตอร์ 2 x 1000 วัตต์  <br>
+               - แข็งแรงและสะดวกในการเคลื่อนย้าย  <br>
+               - ระบายความร้อนใบพัดไหลผ่าน  <br>
+               - พร้อมปั๊ม 2 ชั้น ให้พลังดูดที่เหลือเชื่อ
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - ขนาดถัง 30 ลิตร <br>
+                - ขนาดถัง 60 ลิตร <br>
+                - ขนาดถัง 100 ลิตร
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    </div>
+  </div>
+</div>
+<div id="breach" uk-modal>
+  <div class="uk-modal-dialog" style="width: 70%;">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <div class="uk-modal-header">
+      <h2 class="uk-modal-title"><%= raw t('home.product.carpet_blower')%></h2>
+    </div>
+    <div class="uk-modal-body">
+      <div class="row">
+        <div class="uk-column-1-2">
+          <div class=" uk-text-center">
+            <img src="http://www.thaitechno.net/uploadedimages/c1/Product_37449_59526951_fullsize.jpg" alt="">
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open">
+              <a class="uk-accordion-title uk-text-large" href="#" style="height: 50px;"><span class="uk-text-middle">รายละเอียด</span></a>
+              <div class="uk-accordion-content uk-text-large">
+                เครื่องเป่าพรม Aero Plus ที่ให้ขนาดแรงเป่าลม 3 ระดับ ด้วยมอเตอร์ที่มีขนาดใหญ่ ทำให้พรมแห้งเร็ว หมดปัญหาเรื่องกลิ่นอับ วัสดุแข็งแรงทนทานผลิต จาก Rotocast Polyethylene housing
+                พร้อมชุดล้อลาก เคลื่อนย้ายสะดวก
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">คุณสมบัติ</a>
+              <div class="uk-accordion-content uk-text-large">
+               - ทำให้พรมแห้งเร็ว  <br>
+               - วัสดุแข็งแรงทนทาน  <br>
+               - เคลื่อนย้ายสะดวก
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title uk-text-large" href="#">ขนาด</a>
+              <div class="uk-accordion-content uk-text-large">
+                - สูง 48.3 เซนติเมตร <br>
+                - กว้าง 41.3 เซนติเมตร <br>
+                - ยาว 50.8 เซนติเมตร
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="uk-modal-footer uk-text-right">
+      <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
     </div>
   </div>
 </div>
